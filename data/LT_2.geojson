@@ -1,0 +1,1086 @@
+{
+  "type": "FeatureCollection",
+  "name": "LT_2",
+  "metadata": {
+    "source_image": "Denah Lantai 2.jpeg",
+    "coordinate_system": "source image pixels (x right, y down)",
+    "image_size": [
+      1600,
+      1280
+    ],
+    "px_per_m": 15.0
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "footprint"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.0,
+              172.0
+            ],
+            [
+              1578.0,
+              172.0
+            ],
+            [
+              1578.0,
+              468.0
+            ],
+            [
+              75.0,
+              468.0
+            ],
+            [
+              75.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-222",
+        "code": "222",
+        "name": "Area Koleksi",
+        "area_m2": 238.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              465.0,
+              172.0
+            ],
+            [
+              465.0,
+              330.0
+            ],
+            [
+              125.0,
+              330.0
+            ],
+            [
+              125.0,
+              172.0
+            ],
+            [
+              465.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-222a",
+        "code": "222a",
+        "name": "R. Pengolahan",
+        "area_m2": 8.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              520.0,
+              190.0
+            ],
+            [
+              520.0,
+              225.0
+            ],
+            [
+              465.0,
+              225.0
+            ],
+            [
+              465.0,
+              190.0
+            ],
+            [
+              520.0,
+              190.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-222b",
+        "code": "222b",
+        "name": "R. Audio Visual",
+        "area_m2": 17.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              520.0,
+              230.0
+            ],
+            [
+              520.0,
+              300.0
+            ],
+            [
+              465.0,
+              300.0
+            ],
+            [
+              465.0,
+              230.0
+            ],
+            [
+              520.0,
+              230.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-221",
+        "code": "221",
+        "name": "Life Action Laboratory",
+        "area_m2": 105.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              670.0,
+              172.0
+            ],
+            [
+              670.0,
+              330.0
+            ],
+            [
+              520.0,
+              330.0
+            ],
+            [
+              520.0,
+              172.0
+            ],
+            [
+              670.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-223",
+        "code": "223",
+        "name": "Entrepreneurship Corner",
+        "area_m2": 85.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              215.0,
+              330.0
+            ],
+            [
+              215.0,
+              468.0
+            ],
+            [
+              75.0,
+              468.0
+            ],
+            [
+              75.0,
+              330.0
+            ],
+            [
+              215.0,
+              330.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-224",
+        "code": "224",
+        "name": "224",
+        "area_m2": 24.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              275.0,
+              330.0
+            ],
+            [
+              275.0,
+              420.0
+            ],
+            [
+              215.0,
+              420.0
+            ],
+            [
+              215.0,
+              330.0
+            ],
+            [
+              275.0,
+              330.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-225a",
+        "code": "225a",
+        "name": "Collaboration Room",
+        "area_m2": 16.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              300.0,
+              420.0
+            ],
+            [
+              300.0,
+              468.0
+            ],
+            [
+              225.0,
+              468.0
+            ],
+            [
+              225.0,
+              420.0
+            ],
+            [
+              300.0,
+              420.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-225",
+        "code": "225",
+        "name": "Lounge Perpustakaan",
+        "area_m2": 148.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              275.0,
+              330.0
+            ],
+            [
+              525.0,
+              330.0
+            ],
+            [
+              525.0,
+              468.0
+            ],
+            [
+              300.0,
+              468.0
+            ],
+            [
+              300.0,
+              420.0
+            ],
+            [
+              275.0,
+              420.0
+            ],
+            [
+              275.0,
+              330.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-226",
+        "code": "226",
+        "name": "Student Lounge",
+        "area_m2": 64.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              630.0,
+              330.0
+            ],
+            [
+              630.0,
+              468.0
+            ],
+            [
+              525.0,
+              468.0
+            ],
+            [
+              525.0,
+              330.0
+            ],
+            [
+              630.0,
+              330.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-226b",
+        "code": "226b",
+        "name": "Rg. Laktasi",
+        "area_m2": 3.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              640.0,
+              330.0
+            ],
+            [
+              640.0,
+              360.0
+            ],
+            [
+              615.0,
+              360.0
+            ],
+            [
+              615.0,
+              330.0
+            ],
+            [
+              640.0,
+              330.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-226a",
+        "code": "226a",
+        "name": "Command Centre",
+        "area_m2": 13.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              675.0,
+              400.0
+            ],
+            [
+              675.0,
+              468.0
+            ],
+            [
+              630.0,
+              468.0
+            ],
+            [
+              630.0,
+              400.0
+            ],
+            [
+              675.0,
+              400.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-201C",
+        "code": "201C",
+        "name": "Tax Center",
+        "area_m2": 18.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1055.0,
+              172.0
+            ],
+            [
+              1055.0,
+              235.0
+            ],
+            [
+              990.0,
+              235.0
+            ],
+            [
+              990.0,
+              172.0
+            ],
+            [
+              1055.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-201B",
+        "code": "201B",
+        "name": "Rg. SRB",
+        "area_m2": 14.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1055.0,
+              235.0
+            ],
+            [
+              1055.0,
+              285.0
+            ],
+            [
+              990.0,
+              285.0
+            ],
+            [
+              990.0,
+              235.0
+            ],
+            [
+              1055.0,
+              235.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-201A",
+        "code": "201A",
+        "name": "Rg. SC",
+        "area_m2": 13.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1055.0,
+              285.0
+            ],
+            [
+              1055.0,
+              330.0
+            ],
+            [
+              990.0,
+              330.0
+            ],
+            [
+              990.0,
+              285.0
+            ],
+            [
+              1055.0,
+              285.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-201",
+        "code": "201",
+        "name": "Rg. Meeting",
+        "area_m2": 10.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1055.0,
+              330.0
+            ],
+            [
+              1055.0,
+              370.0
+            ],
+            [
+              995.0,
+              370.0
+            ],
+            [
+              995.0,
+              330.0
+            ],
+            [
+              1055.0,
+              330.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-202",
+        "code": "202",
+        "name": "Student Lounge",
+        "area_m2": 182.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1315.0,
+              172.0
+            ],
+            [
+              1315.0,
+              330.0
+            ],
+            [
+              1055.0,
+              330.0
+            ],
+            [
+              1055.0,
+              172.0
+            ],
+            [
+              1315.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-203",
+        "code": "203",
+        "name": "BAA",
+        "area_m2": 98.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1465.0,
+              172.0
+            ],
+            [
+              1315.0,
+              172.0
+            ],
+            [
+              1315.0,
+              330.0
+            ],
+            [
+              1465.0,
+              330.0
+            ],
+            [
+              1465.0,
+              212.0
+            ],
+            [
+              1420.0,
+              212.0
+            ],
+            [
+              1420.0,
+              180.0
+            ],
+            [
+              1465.0,
+              180.0
+            ],
+            [
+              1465.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-203A",
+        "code": "203A",
+        "name": "Rg. Produksi",
+        "area_m2": 6.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1465.0,
+              180.0
+            ],
+            [
+              1465.0,
+              212.0
+            ],
+            [
+              1420.0,
+              212.0
+            ],
+            [
+              1420.0,
+              180.0
+            ],
+            [
+              1465.0,
+              180.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-203B",
+        "code": "203B",
+        "name": "Rg. Arsip BAA",
+        "area_m2": 42.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1525.0,
+              172.0
+            ],
+            [
+              1525.0,
+              330.0
+            ],
+            [
+              1465.0,
+              330.0
+            ],
+            [
+              1465.0,
+              172.0
+            ],
+            [
+              1525.0,
+              172.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-207",
+        "code": "207",
+        "name": "BMA",
+        "area_m2": 68.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1040.0,
+              365.0
+            ],
+            [
+              1040.0,
+              465.0
+            ],
+            [
+              1225.0,
+              465.0
+            ],
+            [
+              1225.0,
+              365.0
+            ],
+            [
+              1215.0,
+              365.0
+            ],
+            [
+              1215.0,
+              398.0
+            ],
+            [
+              1120.0,
+              398.0
+            ],
+            [
+              1120.0,
+              365.0
+            ],
+            [
+              1040.0,
+              365.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-206",
+        "code": "206",
+        "name": "Rg. Konseling BMA",
+        "area_m2": 13.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1215.0,
+              365.0
+            ],
+            [
+              1215.0,
+              398.0
+            ],
+            [
+              1120.0,
+              398.0
+            ],
+            [
+              1120.0,
+              365.0
+            ],
+            [
+              1215.0,
+              365.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-208",
+        "code": "208",
+        "name": "Gudang BMA",
+        "area_m2": 13.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1040.0,
+              400.0
+            ],
+            [
+              1040.0,
+              465.0
+            ],
+            [
+              995.0,
+              465.0
+            ],
+            [
+              995.0,
+              400.0
+            ],
+            [
+              1040.0,
+              400.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-205",
+        "code": "205",
+        "name": "MNA",
+        "area_m2": 133.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1525.0,
+              365.0
+            ],
+            [
+              1525.0,
+              465.0
+            ],
+            [
+              1225.0,
+              465.0
+            ],
+            [
+              1225.0,
+              365.0
+            ],
+            [
+              1525.0,
+              365.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "room",
+        "id": "LT_2-204",
+        "code": "204",
+        "name": "Gudang MNA",
+        "area_m2": 22.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1575.0,
+              365.0
+            ],
+            [
+              1575.0,
+              465.0
+            ],
+            [
+              1525.0,
+              465.0
+            ],
+            [
+              1525.0,
+              365.0
+            ],
+            [
+              1575.0,
+              365.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "corridor",
+        "id": "LT_2-corridor-1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.0,
+            348.0
+          ],
+          [
+            1550.0,
+            348.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "APAR",
+        "id": "LT_2-APAR-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1527.2,
+          328.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "APAR",
+        "id": "LT_2-APAR-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          546.7,
+          329.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "Hydrant",
+        "id": "LT_2-Hydrant-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          792.3,
+          327.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "Hydrant",
+        "id": "LT_2-Hydrant-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1551.1,
+          355.1
+        ]
+      }
+    }
+  ]
+}
