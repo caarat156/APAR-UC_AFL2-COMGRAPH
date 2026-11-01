@@ -1,0 +1,1223 @@
+{
+  "type": "FeatureCollection",
+  "name": "LT_7",
+  "metadata": {
+    "source_image": "Denah Lantai 7.jpeg",
+    "coordinate_system": "source image pixels (x right, y down)",
+    "image_size": [
+      1600,
+      1280
+    ],
+    "px_per_m": 15.0
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "footprint"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              50.0,
+              180.0
+            ],
+            [
+              1565.0,
+              180.0
+            ],
+            [
+              1565.0,
+              487.0
+            ],
+            [
+              1000.0,
+              487.0
+            ],
+            [
+              1000.0,
+              1082.0
+            ],
+            [
+              648.0,
+              1082.0
+            ],
+            [
+              648.0,
+              487.0
+            ],
+            [
+              50.0,
+              487.0
+            ],
+            [
+              50.0,
+              180.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-713",
+        "code": "713",
+        "name": "Theater",
+        "area_m2": 291.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              530.0,
+              180.0
+            ],
+            [
+              530.0,
+              340.0
+            ],
+            [
+              120.0,
+              340.0
+            ],
+            [
+              120.0,
+              180.0
+            ],
+            [
+              530.0,
+              180.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-712",
+        "code": "712",
+        "name": "Kelas",
+        "area_m2": 95.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              668.0,
+              180.0
+            ],
+            [
+              668.0,
+              335.0
+            ],
+            [
+              530.0,
+              335.0
+            ],
+            [
+              530.0,
+              180.0
+            ],
+            [
+              668.0,
+              180.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714A",
+        "code": "714A",
+        "name": "R. Tutor 1",
+        "area_m2": 22.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              124.0,
+              383.0
+            ],
+            [
+              124.0,
+              480.0
+            ],
+            [
+              72.0,
+              480.0
+            ],
+            [
+              72.0,
+              383.0
+            ],
+            [
+              124.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714B",
+        "code": "714B",
+        "name": "R. Tutor 2",
+        "area_m2": 22.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              175.0,
+              383.0
+            ],
+            [
+              175.0,
+              480.0
+            ],
+            [
+              124.0,
+              480.0
+            ],
+            [
+              124.0,
+              383.0
+            ],
+            [
+              175.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714C",
+        "code": "714C",
+        "name": "R. Tutor 3",
+        "area_m2": 22.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              227.0,
+              383.0
+            ],
+            [
+              227.0,
+              480.0
+            ],
+            [
+              175.0,
+              480.0
+            ],
+            [
+              175.0,
+              383.0
+            ],
+            [
+              227.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714D",
+        "code": "714D",
+        "name": "R. Tutor 4",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              277.0,
+              383.0
+            ],
+            [
+              277.0,
+              480.0
+            ],
+            [
+              227.0,
+              480.0
+            ],
+            [
+              227.0,
+              383.0
+            ],
+            [
+              277.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714E",
+        "code": "714E",
+        "name": "R. Tutor 5",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              327.0,
+              383.0
+            ],
+            [
+              327.0,
+              480.0
+            ],
+            [
+              277.0,
+              480.0
+            ],
+            [
+              277.0,
+              383.0
+            ],
+            [
+              327.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714F",
+        "code": "714F",
+        "name": "R. Tutor 6",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              377.0,
+              383.0
+            ],
+            [
+              377.0,
+              480.0
+            ],
+            [
+              327.0,
+              480.0
+            ],
+            [
+              327.0,
+              383.0
+            ],
+            [
+              377.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714G",
+        "code": "714G",
+        "name": "R. Tutor 7",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              427.0,
+              383.0
+            ],
+            [
+              427.0,
+              480.0
+            ],
+            [
+              377.0,
+              480.0
+            ],
+            [
+              377.0,
+              383.0
+            ],
+            [
+              427.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714H",
+        "code": "714H",
+        "name": "R. Tutor 8",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              477.0,
+              383.0
+            ],
+            [
+              477.0,
+              480.0
+            ],
+            [
+              427.0,
+              480.0
+            ],
+            [
+              427.0,
+              383.0
+            ],
+            [
+              477.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714i",
+        "code": "714i",
+        "name": "R. Tutor 9",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              527.0,
+              383.0
+            ],
+            [
+              527.0,
+              480.0
+            ],
+            [
+              477.0,
+              480.0
+            ],
+            [
+              477.0,
+              383.0
+            ],
+            [
+              527.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714J",
+        "code": "714J",
+        "name": "R. Tutor 10",
+        "area_m2": 21.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              577.0,
+              383.0
+            ],
+            [
+              577.0,
+              480.0
+            ],
+            [
+              527.0,
+              480.0
+            ],
+            [
+              527.0,
+              383.0
+            ],
+            [
+              577.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714K",
+        "code": "714K",
+        "name": "R. Tutor 11",
+        "area_m2": 20.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              624.0,
+              383.0
+            ],
+            [
+              624.0,
+              480.0
+            ],
+            [
+              577.0,
+              480.0
+            ],
+            [
+              577.0,
+              383.0
+            ],
+            [
+              624.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-714L",
+        "code": "714L",
+        "name": "R. Tutor 12",
+        "area_m2": 19.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              668.0,
+              383.0
+            ],
+            [
+              668.0,
+              480.0
+            ],
+            [
+              624.0,
+              480.0
+            ],
+            [
+              624.0,
+              383.0
+            ],
+            [
+              668.0,
+              383.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-PREF",
+        "code": "PREF",
+        "name": "Prefunction",
+        "area_m2": 259.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1085.0,
+              340.0
+            ],
+            [
+              1085.0,
+              480.0
+            ],
+            [
+              668.0,
+              480.0
+            ],
+            [
+              668.0,
+              340.0
+            ],
+            [
+              1085.0,
+              340.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-707",
+        "code": "707",
+        "name": "Storage",
+        "area_m2": 102.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1130.0,
+              180.0
+            ],
+            [
+              1130.0,
+              335.0
+            ],
+            [
+              982.0,
+              335.0
+            ],
+            [
+              982.0,
+              180.0
+            ],
+            [
+              1130.0,
+              180.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-708",
+        "code": "708",
+        "name": "Storage",
+        "area_m2": 28.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1215.0,
+              215.0
+            ],
+            [
+              1215.0,
+              290.0
+            ],
+            [
+              1130.0,
+              290.0
+            ],
+            [
+              1130.0,
+              215.0
+            ],
+            [
+              1215.0,
+              215.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-709",
+        "code": "709",
+        "name": "Storage",
+        "area_m2": 28.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1215.0,
+              290.0
+            ],
+            [
+              1215.0,
+              385.0
+            ],
+            [
+              1148.0,
+              385.0
+            ],
+            [
+              1148.0,
+              290.0
+            ],
+            [
+              1215.0,
+              290.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-710",
+        "code": "710",
+        "name": "Storage Auditorium",
+        "area_m2": 34.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1215.0,
+              425.0
+            ],
+            [
+              1215.0,
+              485.0
+            ],
+            [
+              1085.0,
+              485.0
+            ],
+            [
+              1085.0,
+              425.0
+            ],
+            [
+              1215.0,
+              425.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-711",
+        "code": "711",
+        "name": "Auditorium (Kapasitas 500)",
+        "area_m2": 352.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1475.0,
+              180.0
+            ],
+            [
+              1475.0,
+              485.0
+            ],
+            [
+              1215.0,
+              485.0
+            ],
+            [
+              1215.0,
+              180.0
+            ],
+            [
+              1475.0,
+              180.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-701A",
+        "code": "701A",
+        "name": "R. Tutor 13",
+        "area_m2": 18.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              975.0,
+              483.0
+            ],
+            [
+              975.0,
+              530.0
+            ],
+            [
+              888.0,
+              530.0
+            ],
+            [
+              888.0,
+              483.0
+            ],
+            [
+              975.0,
+              483.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-701B",
+        "code": "701B",
+        "name": "R. Tutor 14",
+        "area_m2": 19.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              975.0,
+              530.0
+            ],
+            [
+              975.0,
+              580.0
+            ],
+            [
+              888.0,
+              580.0
+            ],
+            [
+              888.0,
+              530.0
+            ],
+            [
+              975.0,
+              530.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-701C",
+        "code": "701C",
+        "name": "R. Tutor 15",
+        "area_m2": 19.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              975.0,
+              580.0
+            ],
+            [
+              975.0,
+              630.0
+            ],
+            [
+              888.0,
+              630.0
+            ],
+            [
+              888.0,
+              580.0
+            ],
+            [
+              975.0,
+              580.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-702",
+        "code": "702",
+        "name": "Gudang Alat FK",
+        "area_m2": 58.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              975.0,
+              630.0
+            ],
+            [
+              975.0,
+              780.0
+            ],
+            [
+              888.0,
+              780.0
+            ],
+            [
+              888.0,
+              630.0
+            ],
+            [
+              975.0,
+              630.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-705-706",
+        "code": "705-706",
+        "name": "Ruang VR",
+        "area_m2": 210.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              480.0
+            ],
+            [
+              830.0,
+              780.0
+            ],
+            [
+              672.0,
+              780.0
+            ],
+            [
+              672.0,
+              480.0
+            ],
+            [
+              830.0,
+              480.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "room",
+        "id": "LT_7-703-704",
+        "code": "703-704",
+        "name": "Theater 2 (On Progress)",
+        "area_m2": 410.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              980.0,
+              780.0
+            ],
+            [
+              980.0,
+              1080.0
+            ],
+            [
+              672.0,
+              1080.0
+            ],
+            [
+              672.0,
+              780.0
+            ],
+            [
+              980.0,
+              780.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "corridor",
+        "id": "LT_7-corridor-1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.0,
+            362.0
+          ],
+          [
+            1540.0,
+            362.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "corridor",
+        "id": "LT_7-corridor-2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            858.0,
+            362.0
+          ],
+          [
+            858.0,
+            1050.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "APAR",
+        "id": "LT_7-APAR-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1455.0,
+          184.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "APAR",
+        "id": "LT_7-APAR-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0,
+          339.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "APAR",
+        "id": "LT_7-APAR-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          797.4,
+          341.6
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "APAR",
+        "id": "LT_7-APAR-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1457.1,
+          479.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "Hydrant",
+        "id": "LT_7-Hydrant-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1492.2,
+          187.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "Hydrant",
+        "id": "LT_7-Hydrant-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          780.3,
+          338.7
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "Hydrant",
+        "id": "LT_7-Hydrant-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.0,
+          339.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "Hydrant",
+        "id": "LT_7-Hydrant-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          833.6,
+          766.0
+        ]
+      }
+    }
+  ]
+}

@@ -2,11 +2,12 @@ import json
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-import networkx as nx
 import pandas as pd
 import streamlit as st
-from shapely.geometry import Point, LineString, shape
-from shapely.ops import nearest_points, unary_union
+from shapely.geometry import Point, LineString
+from shapely.ops import unary_union
+
+from routing import FloorNav, natural_key, load_floor_file
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 FLOORS = ["LT_1", "LT_2", "LT_2A", "LT_3", "LT_4", "LT_5", "LT_6", "LT_7"]
@@ -15,116 +16,31 @@ PX_PER_M = 15.0  # Skala: 15 piksel = 1 meter
 
 @st.cache_data
 def load_floor(floor):
-    gj = json.loads((DATA_DIR / f"{floor}.geojson").read_text(encoding="utf-8"))
-    result = {
-        "footprint": None,
-        "rooms": [],
-        "corridors": [],
-        "apar": [],
-        "hydrant": []
-    }
-    for feat in gj["features"]:
-        geom = shape(feat["geometry"])
-        props = feat["properties"]
-        kind = props["type"]
-        if kind == "footprint":
-            result["footprint"] = geom
-        elif kind == "room":
-            result["rooms"].append({
-                "code": props["code"],
-                "name": props["name"],
-                "geom": geom,
-                "area_m2": props.get("area_m2", 0.0)
+    return load_floor_file(DATA_DIR / f"{floor}.geojson")
+
+
+@st.cache_resource
+def get_floor_nav(floor):
+    data = load_floor(floor)
+    return FloorNav(data)
+
+
+@st.cache_data
+def get_all_rooms_index():
+    """Mengindeks seluruh ruangan di semua lantai untuk fitur search global."""
+    all_rooms = []
+    for f in FLOORS:
+        fdata = load_floor(f)
+        for r in fdata["rooms"]:
+            all_rooms.append({
+                "code": r["code"],
+                "name": r["name"],
+                "floor": f,
+                "label": f"[{f}] {r['code']} - {r['name']}"
             })
-        elif kind == "corridor":
-            result["corridors"].append(geom)
-        elif kind == "APAR":
-            result["apar"].append({
-                "id": props.get("id", "APAR"),
-                "geom": geom,
-                "inside": props.get("inside_building", True)
-            })
-        elif kind == "Hydrant":
-            result["hydrant"].append({
-                "id": props.get("id", "Hydrant"),
-                "geom": geom
-            })
-    return result
-
-
-def build_corridor_graph(corridor_lines):
-    G = nx.Graph()
-    if not corridor_lines:
-        return G
-
-    for line in corridor_lines:
-        coords = list(line.coords)
-        for i in range(len(coords) - 1):
-            p1, p2 = coords[i], coords[i + 1]
-            dist = Point(p1).distance(Point(p2))
-            G.add_edge(p1, p2, weight=dist)
-
-    # Hubungkan persimpangan jika ada garis koridor yang berpotongan
-    for i in range(len(corridor_lines)):
-        for j in range(i + 1, len(corridor_lines)):
-            l1, l2 = corridor_lines[i], corridor_lines[j]
-            inter = l1.intersection(l2)
-            if not inter.is_empty and inter.geom_type == "Point":
-                ip = (inter.x, inter.y)
-                for l in (l1, l2):
-                    c = list(l.coords)
-                    p1, p2 = c[0], c[-1]
-                    d1 = Point(ip).distance(Point(p1))
-                    d2 = Point(ip).distance(Point(p2))
-                    G.add_edge(ip, p1, weight=d1)
-                    G.add_edge(ip, p2, weight=d2)
-    return G
-
-
-def compute_corridor_route(graph, corridor_union, pt_start, pt_end):
-    """
-    Menghitung rute koridor (real walking distance) dari pt_start ke pt_end.
-    Trik Computational Geometry:
-    1. Proyeksikan pt_start dan pt_end ke titik terdekat di sumbu koridor.
-    2. Hubungkan ke Graph, cari Shortest Path dengan Dijkstra (networkx).
-    3. Kembalikan rute lengkap: Start -> Entry -> Jalur Koridor -> Exit -> End.
-    """
-    if corridor_union.is_empty or graph.number_of_nodes() == 0:
-        # Fallback garis lurus jika tidak ada koridor
-        line = LineString([pt_start, pt_end])
-        return [(pt_start.x, pt_start.y), (pt_end.x, pt_end.y)], line.length
-
-    # 1. Proyeksi titik ke koridor
-    proj_start = nearest_points(corridor_union, pt_start)[0]
-    proj_end = nearest_points(corridor_union, pt_end)[0]
-
-    node_start = (proj_start.x, proj_start.y)
-    node_end = (proj_end.x, proj_end.y)
-
-    H = graph.copy()
-
-    # Hubungkan node_start ke node terdekat di graph
-    nodes = list(graph.nodes)
-    closest_start = min(nodes, key=lambda n: Point(n).distance(proj_start))
-    H.add_edge(node_start, closest_start, weight=Point(node_start).distance(Point(closest_start)))
-
-    # Hubungkan node_end ke node terdekat di graph
-    closest_end = min(nodes, key=lambda n: Point(n).distance(proj_end))
-    H.add_edge(node_end, closest_end, weight=Point(node_end).distance(Point(closest_end)))
-
-    try:
-        path_nodes = nx.shortest_path(H, source=node_start, target=node_end, weight="weight")
-        corridor_len = nx.shortest_path_length(H, source=node_start, target=node_end, weight="weight")
-        
-        # Jarak total = (start -> pintu/koridor) + (jalan koridor) + (koridor -> APAR)
-        d_in = pt_start.distance(proj_start)
-        d_out = proj_end.distance(pt_end)
-        total_px = d_in + corridor_len + d_out
-        full_coords = [(pt_start.x, pt_start.y)] + path_nodes + [(pt_end.x, pt_end.y)]
-        return full_coords, total_px
-    except (nx.NetworkXNoPath, nx.NodeNotFound):
-        line = LineString([pt_start, pt_end])
-        return [(pt_start.x, pt_start.y), (pt_end.x, pt_end.y)], line.length
+    # Urutkan berdasarkan lantai lalu natural sort kode ruangan
+    all_rooms.sort(key=lambda x: (FLOORS.index(x["floor"]), natural_key(x["code"])))
+    return all_rooms
 
 
 def plot_polygon(ax, geom, **kwargs):
@@ -143,7 +59,7 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
     # 2. Gambar Koridor
     for line in data["corridors"]:
         lx, ly = line.xy
-        ax.plot(lx, ly, color="#d0d0d5", linewidth=3.5, linestyle="--", zorder=1)
+        ax.plot(lx, ly, color="#2e7d32", linewidth=3.5, linestyle="--", alpha=0.85, zorder=2)
 
     # 3. Buffer Lingkaran 15 Meter (Analisis Jangkauan)
     if buffer_union is not None and not buffer_union.is_empty:
@@ -175,7 +91,7 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
         rx = [p.x if hasattr(p, "x") else p[0] for p in route_coords]
         ry = [p.y if hasattr(p, "y") else p[1] for p in route_coords]
         # Garis rute utama
-        ax.plot(rx, ry, color="#d50000", linewidth=3.0, linestyle="-", zorder=6, label="Jalur Koridor ke APAR")
+        ax.plot(rx, ry, color="#d50000", linewidth=3.2, linestyle="-", zorder=6, label="Jalur Koridor ke APAR")
         # Titik start (Centroid Ruangan)
         ax.scatter([rx[0]], [ry[0]], c="#e65100", s=90, edgecolors="white", linewidth=1.5, zorder=7, label="Centroid Ruangan")
 
@@ -207,13 +123,45 @@ st.set_page_config(page_title="APAR-UC GIS Finder", layout="wide", page_icon="�
 st.title("🧯 APAR-UC: GIS Pencarian APAR & Analisis Jangkauan")
 st.caption("Main Building Universitas Ciputra (Lantai 1 - 7) • Berbasis Geometri Shapely & NetworkX")
 
+# Session state initialization
+if "floor_selector" not in st.session_state:
+    st.session_state["floor_selector"] = "LT_1"
+if "current_room_code" not in st.session_state:
+    st.session_state["current_room_code"] = None
+
+# Fitur Search Ruangan Global (Semua Lantai)
+all_rooms_index = get_all_rooms_index()
+search_labels = ["-- Cari nomor/nama ruangan dari semua lantai --"] + [item["label"] for item in all_rooms_index]
+
+def on_search_select():
+    val = st.session_state.get("global_search_box")
+    if val and val != search_labels[0]:
+        matched = next((item for item in all_rooms_index if item["label"] == val), None)
+        if matched:
+            st.session_state["floor_selector"] = matched["floor"]
+            st.session_state["current_room_code"] = matched["code"]
+
+st.selectbox(
+    "🔍 Cari Nomor Ruangan (Langsung Menuju Lantai & Ruangan Tersebut):",
+    search_labels,
+    key="global_search_box",
+    on_change=on_search_select,
+    help="Pilih atau ketik nomor ruangan untuk langsung membuka peta lantainya dan memilih ruangan tersebut."
+)
+
+def on_floor_change():
+    st.session_state["current_room_code"] = None
+
 col_fl, col_md = st.columns([1, 2])
 with col_fl:
-    floor = st.selectbox("🏢 Pilih Lantai", FLOORS, index=0)
+    floor = st.selectbox(
+        "🏢 Pilih Lantai",
+        FLOORS,
+        key="floor_selector",
+        on_change=on_floor_change
+    )
 
 data = load_floor(floor)
-corridor_union = unary_union(data["corridors"]) if data["corridors"] else LineString()
-corridor_graph = build_corridor_graph(data["corridors"])
 
 with col_md:
     mode = st.radio(
@@ -225,40 +173,50 @@ with col_md:
 st.divider()
 
 if mode == "Pencarian APAR Terdekat (Real Walking Distance)":
-    room_options = {f"{r['code']} - {r['name']}": r for r in data["rooms"]}
+    # Nomor ruangan di dropdown diurutkan secara natural (101, 102, 107, 107A, 113, 113a, ...)
+    sorted_rooms = sorted(data["rooms"], key=lambda r: natural_key(r["code"]))
+    room_options = {f"{r['code']} - {r['name']}": r for r in sorted_rooms}
+    
     if not room_options:
         st.warning("⚠️ Tidak ditemukan data ruangan untuk lantai ini.")
     elif not data["apar"]:
         st.warning("⚠️ Tidak ditemukan data titik APAR untuk lantai ini.")
     else:
+        # Tentukan default index berdasarkan current_room_code jika ada
+        default_idx = 0
+        if st.session_state["current_room_code"]:
+            for idx, r in enumerate(sorted_rooms):
+                if r["code"] == st.session_state["current_room_code"]:
+                    default_idx = idx
+                    break
+
         col_input, col_info = st.columns([1, 2])
         with col_input:
-            selected_key = st.selectbox("🚪 Pilih Ruangan Sumber Kebakaran", list(room_options.keys()))
+            selected_key = st.selectbox(
+                "🚪 Pilih Ruangan Sumber Kebakaran",
+                list(room_options.keys()),
+                index=default_idx
+            )
             selected_room = room_options[selected_key]
-            room_centroid = selected_room["geom"].centroid
+            st.session_state["current_room_code"] = selected_room["code"]
             
-            # Hitung jarak ke seluruh APAR
+            # Hitung jarak dan rute koridor bebas tembok menggunakan FloorNav
+            nav = get_floor_nav(floor)
+            raw_results = nav.route(selected_room["code"], data["apar"])
+            
             results = []
-            for apar in data["apar"]:
-                apar_pt = apar["geom"]
-                # 1. Euclidean distance (garis lurus)
-                euc_px = room_centroid.distance(apar_pt)
-                euc_m = euc_px / PX_PER_M
-                
-                # 2. Real walking distance (jalur koridor)
-                route, walk_px = compute_corridor_route(corridor_graph, corridor_union, room_centroid, apar_pt)
-                walk_m = walk_px / PX_PER_M
-                
+            for r in raw_results:
+                walk_m = round(r["walk_px"] / PX_PER_M, 2)
+                euc_m = round(r["euc_px"] / PX_PER_M, 2)
                 results.append({
-                    "id": apar["id"],
-                    "apar_pt": apar_pt,
-                    "euc_m": round(euc_m, 2),
-                    "walk_m": round(walk_m, 2),
-                    "route": route
+                    "id": r["id"],
+                    "apar_pt": r["apar_pt"],
+                    "euc_m": euc_m,
+                    "walk_m": walk_m,
+                    "diff_m": round(walk_m - euc_m, 2),
+                    "route": r["route"]
                 })
                 
-            # Urutkan berdasarkan jarak koridor nyata terdekat
-            results.sort(key=lambda x: x["walk_m"])
             nearest = results[0] if results else None
 
         with col_info:
@@ -267,13 +225,18 @@ if mode == "Pencarian APAR Terdekat (Real Walking Distance)":
                 m1.metric("📍 APAR Terdekat", nearest["id"])
                 m2.metric("🚶 Real Walking Distance", f"{nearest['walk_m']} m")
                 m3.metric("📏 Euclidean Distance", f"{nearest['euc_m']} m")
+                
+                # Info jalur jika melalui ruangan penghubung
+                via = nav.door_via.get(selected_room["code"])
+                if via == "tetangga":
+                    st.caption("ℹ️ *Ruangan ini berada di baris dalam; rute berjalan melalui ruangan tetangga yang berbagi dinding menuju koridor.*")
 
         # Render peta
         route_coords = nearest["route"] if nearest else None
         fig = render_map(data, selected_room=selected_room, route_coords=route_coords)
         st.pyplot(fig)
 
-        # Tabel Top 3 APAR Terdekat sesuai dokumen laporan
+        # Tabel Top 3 APAR Terdekat
         if results:
             st.subheader("📋 Daftar APAR Terdekat dari " + selected_room["code"])
             df_apar = pd.DataFrame([{
@@ -281,7 +244,7 @@ if mode == "Pencarian APAR Terdekat (Real Walking Distance)":
                 "ID APAR": r["id"],
                 "Walking Distance (Koridor)": f"{r['walk_m']} meter",
                 "Euclidean Distance (Lurus)": f"{r['euc_m']} meter",
-                "Selisih Jarak Nyata vs Lurus": f"{round(r['walk_m'] - r['euc_m'], 2)} meter"
+                "Selisih Jarak Nyata vs Lurus": f"{r['diff_m']} meter"
             } for idx, r in enumerate(results[:3])])
             st.table(df_apar)
 

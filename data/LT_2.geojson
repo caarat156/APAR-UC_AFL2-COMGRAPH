@@ -1001,27 +1001,6 @@
       "type": "Feature",
       "properties": {
         "floor": "LT_2",
-        "type": "corridor",
-        "id": "LT_2-corridor-1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            90.0,
-            348.0
-          ],
-          [
-            1550.0,
-            348.0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_2",
         "type": "APAR",
         "id": "LT_2-APAR-01",
         "inside_building": true
@@ -1079,6 +1058,35 @@
         "coordinates": [
           1551.1,
           355.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_2",
+        "type": "corridor",
+        "id": "LT_2-COR-01",
+        "through": [
+          "201",
+          "223",
+          "224",
+          "225",
+          "226",
+          "226b"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.0,
+            346.0
+          ],
+          [
+            1550.0,
+            346.0
+          ]
         ]
       }
     }

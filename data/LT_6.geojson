@@ -1623,48 +1623,6 @@
       "type": "Feature",
       "properties": {
         "floor": "LT_6",
-        "type": "corridor",
-        "id": "LT_6-corridor-1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            70.0,
-            385.0
-          ],
-          [
-            1540.0,
-            385.0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_6",
-        "type": "corridor",
-        "id": "LT_6-corridor-2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            858.0,
-            385.0
-          ],
-          [
-            858.0,
-            1050.0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_6",
         "type": "APAR",
         "id": "LT_6-APAR-01",
         "inside_building": true
@@ -1786,6 +1744,80 @@
         "coordinates": [
           880.9,
           1072.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_6",
+        "type": "corridor",
+        "id": "LT_6-COR-01",
+        "through": []
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.0,
+            385.0
+          ],
+          [
+            1540.0,
+            385.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_6",
+        "type": "corridor",
+        "id": "LT_6-COR-02",
+        "through": []
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            858.0,
+            385.0
+          ],
+          [
+            858.0,
+            1050.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_6",
+        "type": "corridor",
+        "id": "LT_6-COR-03",
+        "through": []
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            130.0,
+            385.0
+          ],
+          [
+            130.0,
+            290.0
+          ],
+          [
+            632.0,
+            290.0
+          ],
+          [
+            632.0,
+            385.0
+          ]
         ]
       }
     }

@@ -1,0 +1,1969 @@
+{
+  "type": "FeatureCollection",
+  "name": "LT_3",
+  "metadata": {
+    "source_image": "Denah Lantai 3.jpeg",
+    "coordinate_system": "source image pixels (x right, y down)",
+    "image_size": [
+      1600,
+      1280
+    ],
+    "px_per_m": 15.0
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "footprint"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40.0,
+              182.0
+            ],
+            [
+              1548.0,
+              182.0
+            ],
+            [
+              1548.0,
+              500.0
+            ],
+            [
+              975.0,
+              500.0
+            ],
+            [
+              975.0,
+              1085.0
+            ],
+            [
+              640.0,
+              1085.0
+            ],
+            [
+              640.0,
+              500.0
+            ],
+            [
+              25.0,
+              500.0
+            ],
+            [
+              25.0,
+              380.0
+            ],
+            [
+              40.0,
+              380.0
+            ],
+            [
+              40.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324G",
+        "code": "324G",
+        "name": "Keterampilan Medik",
+        "area_m2": 18.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.0,
+              182.0
+            ],
+            [
+              145.0,
+              265.0
+            ],
+            [
+              95.0,
+              265.0
+            ],
+            [
+              95.0,
+              182.0
+            ],
+            [
+              145.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324H",
+        "code": "324H",
+        "name": "Keterampilan Medik",
+        "area_m2": 19.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              197.0,
+              182.0
+            ],
+            [
+              197.0,
+              265.0
+            ],
+            [
+              145.0,
+              265.0
+            ],
+            [
+              145.0,
+              182.0
+            ],
+            [
+              197.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324I",
+        "code": "324I",
+        "name": "Keterampilan Medik",
+        "area_m2": 18.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              248.0,
+              182.0
+            ],
+            [
+              248.0,
+              265.0
+            ],
+            [
+              197.0,
+              265.0
+            ],
+            [
+              197.0,
+              182.0
+            ],
+            [
+              248.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324J",
+        "code": "324J",
+        "name": "Keterampilan Medik",
+        "area_m2": 18.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              298.0,
+              182.0
+            ],
+            [
+              298.0,
+              265.0
+            ],
+            [
+              248.0,
+              265.0
+            ],
+            [
+              248.0,
+              182.0
+            ],
+            [
+              298.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324K",
+        "code": "324K",
+        "name": "Keterampilan Medik",
+        "area_m2": 18.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              348.0,
+              182.0
+            ],
+            [
+              348.0,
+              265.0
+            ],
+            [
+              298.0,
+              265.0
+            ],
+            [
+              298.0,
+              182.0
+            ],
+            [
+              348.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324L",
+        "code": "324L",
+        "name": "Keterampilan Medik",
+        "area_m2": 18.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              398.0,
+              182.0
+            ],
+            [
+              398.0,
+              265.0
+            ],
+            [
+              348.0,
+              265.0
+            ],
+            [
+              348.0,
+              182.0
+            ],
+            [
+              398.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324M",
+        "code": "324M",
+        "name": "Keterampilan Medik",
+        "area_m2": 23.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              462.0,
+              182.0
+            ],
+            [
+              462.0,
+              265.0
+            ],
+            [
+              398.0,
+              265.0
+            ],
+            [
+              398.0,
+              182.0
+            ],
+            [
+              462.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324N",
+        "code": "324N",
+        "name": "Keterampilan Medik",
+        "area_m2": 26.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              533.0,
+              182.0
+            ],
+            [
+              533.0,
+              265.0
+            ],
+            [
+              462.0,
+              265.0
+            ],
+            [
+              462.0,
+              182.0
+            ],
+            [
+              533.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324O",
+        "code": "324O",
+        "name": "Keterampilan Medik",
+        "area_m2": 26.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              605.0,
+              182.0
+            ],
+            [
+              605.0,
+              265.0
+            ],
+            [
+              533.0,
+              265.0
+            ],
+            [
+              533.0,
+              182.0
+            ],
+            [
+              605.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-323",
+        "code": "323",
+        "name": "Gudang",
+        "area_m2": 12.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              640.0,
+              182.0
+            ],
+            [
+              640.0,
+              265.0
+            ],
+            [
+              605.0,
+              265.0
+            ],
+            [
+              605.0,
+              182.0
+            ],
+            [
+              640.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324F",
+        "code": "324F",
+        "name": "Keterampilan Medik",
+        "area_m2": 15.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              162.0,
+              268.0
+            ],
+            [
+              162.0,
+              338.0
+            ],
+            [
+              112.0,
+              338.0
+            ],
+            [
+              112.0,
+              268.0
+            ],
+            [
+              162.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324E",
+        "code": "324E",
+        "name": "Keterampilan Medik",
+        "area_m2": 15.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              212.0,
+              268.0
+            ],
+            [
+              212.0,
+              338.0
+            ],
+            [
+              162.0,
+              338.0
+            ],
+            [
+              162.0,
+              268.0
+            ],
+            [
+              212.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324D",
+        "code": "324D",
+        "name": "Keterampilan Medik",
+        "area_m2": 14.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              258.0,
+              268.0
+            ],
+            [
+              258.0,
+              338.0
+            ],
+            [
+              212.0,
+              338.0
+            ],
+            [
+              212.0,
+              268.0
+            ],
+            [
+              258.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324C",
+        "code": "324C",
+        "name": "Keterampilan Medik",
+        "area_m2": 14.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              303.0,
+              268.0
+            ],
+            [
+              303.0,
+              338.0
+            ],
+            [
+              258.0,
+              338.0
+            ],
+            [
+              258.0,
+              268.0
+            ],
+            [
+              303.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324B",
+        "code": "324B",
+        "name": "Keterampilan Medik",
+        "area_m2": 14.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              348.0,
+              268.0
+            ],
+            [
+              348.0,
+              338.0
+            ],
+            [
+              303.0,
+              338.0
+            ],
+            [
+              303.0,
+              268.0
+            ],
+            [
+              348.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-324A",
+        "code": "324A",
+        "name": "Keterampilan Medik",
+        "area_m2": 15.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              398.0,
+              268.0
+            ],
+            [
+              398.0,
+              338.0
+            ],
+            [
+              348.0,
+              338.0
+            ],
+            [
+              348.0,
+              268.0
+            ],
+            [
+              398.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-321A",
+        "code": "321A",
+        "name": "R. Tutor",
+        "area_m2": 25.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              500.0,
+              268.0
+            ],
+            [
+              500.0,
+              338.0
+            ],
+            [
+              418.0,
+              338.0
+            ],
+            [
+              418.0,
+              268.0
+            ],
+            [
+              500.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-321B",
+        "code": "321B",
+        "name": "R. Tutor",
+        "area_m2": 24.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              578.0,
+              268.0
+            ],
+            [
+              578.0,
+              338.0
+            ],
+            [
+              500.0,
+              338.0
+            ],
+            [
+              500.0,
+              268.0
+            ],
+            [
+              578.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-322",
+        "code": "322",
+        "name": "R. Penguji & R. Kendali",
+        "area_m2": 19.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              640.0,
+              268.0
+            ],
+            [
+              640.0,
+              338.0
+            ],
+            [
+              578.0,
+              338.0
+            ],
+            [
+              578.0,
+              268.0
+            ],
+            [
+              640.0,
+              268.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-325",
+        "code": "325",
+        "name": "R. Gudang Manekin",
+        "area_m2": 165.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              340.0,
+              382.0
+            ],
+            [
+              340.0,
+              500.0
+            ],
+            [
+              25.0,
+              500.0
+            ],
+            [
+              25.0,
+              382.0
+            ],
+            [
+              340.0,
+              382.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-326",
+        "code": "326",
+        "name": "Gudang Penyimpanan",
+        "area_m2": 49.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              435.0,
+              382.0
+            ],
+            [
+              435.0,
+              500.0
+            ],
+            [
+              340.0,
+              500.0
+            ],
+            [
+              340.0,
+              382.0
+            ],
+            [
+              435.0,
+              382.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-327",
+        "code": "327",
+        "name": "R. Belajar Manekin",
+        "area_m2": 34.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              500.0,
+              382.0
+            ],
+            [
+              500.0,
+              500.0
+            ],
+            [
+              435.0,
+              500.0
+            ],
+            [
+              435.0,
+              382.0
+            ],
+            [
+              500.0,
+              382.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-328",
+        "code": "328",
+        "name": "R. WD1",
+        "area_m2": 13.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              548.0,
+              385.0
+            ],
+            [
+              548.0,
+              450.0
+            ],
+            [
+              500.0,
+              450.0
+            ],
+            [
+              500.0,
+              385.0
+            ],
+            [
+              548.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-329",
+        "code": "329",
+        "name": "R. WD2",
+        "area_m2": 14.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              597.0,
+              385.0
+            ],
+            [
+              597.0,
+              450.0
+            ],
+            [
+              548.0,
+              450.0
+            ],
+            [
+              548.0,
+              385.0
+            ],
+            [
+              597.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-330",
+        "code": "330",
+        "name": "R. Dekan",
+        "area_m2": 13.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              645.0,
+              385.0
+            ],
+            [
+              645.0,
+              450.0
+            ],
+            [
+              597.0,
+              450.0
+            ],
+            [
+              597.0,
+              385.0
+            ],
+            [
+              645.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-330a",
+        "code": "330a",
+        "name": "R. WD3",
+        "area_m2": 13.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              690.0,
+              385.0
+            ],
+            [
+              690.0,
+              450.0
+            ],
+            [
+              645.0,
+              450.0
+            ],
+            [
+              645.0,
+              385.0
+            ],
+            [
+              690.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-331",
+        "code": "331",
+        "name": "Academic Support",
+        "area_m2": 35.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              800.0,
+              385.0
+            ],
+            [
+              800.0,
+              480.0
+            ],
+            [
+              715.0,
+              480.0
+            ],
+            [
+              715.0,
+              385.0
+            ],
+            [
+              800.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-310",
+        "code": "310",
+        "name": "Rg. Dosen MED",
+        "area_m2": 110.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              805.0,
+              480.0
+            ],
+            [
+              805.0,
+              630.0
+            ],
+            [
+              640.0,
+              630.0
+            ],
+            [
+              640.0,
+              480.0
+            ],
+            [
+              805.0,
+              480.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-309",
+        "code": "309",
+        "name": "Kelas",
+        "area_m2": 110.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              805.0,
+              630.0
+            ],
+            [
+              805.0,
+              780.0
+            ],
+            [
+              640.0,
+              780.0
+            ],
+            [
+              640.0,
+              630.0
+            ],
+            [
+              805.0,
+              630.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-307-308",
+        "code": "307-308",
+        "name": "Kelas",
+        "area_m2": 223.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              805.0,
+              780.0
+            ],
+            [
+              805.0,
+              1085.0
+            ],
+            [
+              640.0,
+              1085.0
+            ],
+            [
+              640.0,
+              780.0
+            ],
+            [
+              805.0,
+              780.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-301",
+        "code": "301",
+        "name": "Academic Support",
+        "area_m2": 35.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              955.0,
+              385.0
+            ],
+            [
+              955.0,
+              470.0
+            ],
+            [
+              862.0,
+              470.0
+            ],
+            [
+              862.0,
+              385.0
+            ],
+            [
+              955.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-302",
+        "code": "302",
+        "name": "Rg. Dosen MDP",
+        "area_m2": 150.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              975.0,
+              485.0
+            ],
+            [
+              975.0,
+              780.0
+            ],
+            [
+              860.0,
+              780.0
+            ],
+            [
+              860.0,
+              485.0
+            ],
+            [
+              975.0,
+              485.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-304",
+        "code": "304",
+        "name": "Rg. Dosen MED",
+        "area_m2": 76.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              975.0,
+              780.0
+            ],
+            [
+              975.0,
+              930.0
+            ],
+            [
+              860.0,
+              930.0
+            ],
+            [
+              860.0,
+              780.0
+            ],
+            [
+              975.0,
+              780.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-306",
+        "code": "306",
+        "name": "Rg. Meeting",
+        "area_m2": 46.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              955.0,
+              930.0
+            ],
+            [
+              955.0,
+              1040.0
+            ],
+            [
+              860.0,
+              1040.0
+            ],
+            [
+              860.0,
+              930.0
+            ],
+            [
+              955.0,
+              930.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-311",
+        "code": "311",
+        "name": "Lab 311",
+        "area_m2": 108.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1100.0,
+              182.0
+            ],
+            [
+              1100.0,
+              350.0
+            ],
+            [
+              955.0,
+              350.0
+            ],
+            [
+              955.0,
+              182.0
+            ],
+            [
+              1100.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-312",
+        "code": "312",
+        "name": "Lab 312",
+        "area_m2": 104.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1240.0,
+              182.0
+            ],
+            [
+              1240.0,
+              350.0
+            ],
+            [
+              1100.0,
+              350.0
+            ],
+            [
+              1100.0,
+              182.0
+            ],
+            [
+              1240.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-313",
+        "code": "313",
+        "name": "Lab 313",
+        "area_m2": 112.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1390.0,
+              182.0
+            ],
+            [
+              1390.0,
+              350.0
+            ],
+            [
+              1240.0,
+              350.0
+            ],
+            [
+              1240.0,
+              182.0
+            ],
+            [
+              1390.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-314",
+        "code": "314",
+        "name": "Server",
+        "area_m2": 70.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1490.0,
+              182.0
+            ],
+            [
+              1490.0,
+              340.0
+            ],
+            [
+              1390.0,
+              340.0
+            ],
+            [
+              1390.0,
+              182.0
+            ],
+            [
+              1490.0,
+              182.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-320",
+        "code": "320",
+        "name": "HOD MDP",
+        "area_m2": 15.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1005.0,
+              385.0
+            ],
+            [
+              1005.0,
+              455.0
+            ],
+            [
+              955.0,
+              455.0
+            ],
+            [
+              955.0,
+              385.0
+            ],
+            [
+              1005.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-319",
+        "code": "319",
+        "name": "WD 3",
+        "area_m2": 15.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1055.0,
+              385.0
+            ],
+            [
+              1055.0,
+              455.0
+            ],
+            [
+              1005.0,
+              455.0
+            ],
+            [
+              1005.0,
+              385.0
+            ],
+            [
+              1055.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-318",
+        "code": "318",
+        "name": "WD 2",
+        "area_m2": 14.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1100.0,
+              385.0
+            ],
+            [
+              1100.0,
+              455.0
+            ],
+            [
+              1055.0,
+              455.0
+            ],
+            [
+              1055.0,
+              385.0
+            ],
+            [
+              1100.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-317",
+        "code": "317",
+        "name": "Metrodata",
+        "area_m2": 69.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1235.0,
+              385.0
+            ],
+            [
+              1235.0,
+              500.0
+            ],
+            [
+              1100.0,
+              500.0
+            ],
+            [
+              1100.0,
+              385.0
+            ],
+            [
+              1235.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-316",
+        "code": "316",
+        "name": "Kelas 316",
+        "area_m2": 81.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1395.0,
+              385.0
+            ],
+            [
+              1395.0,
+              500.0
+            ],
+            [
+              1235.0,
+              500.0
+            ],
+            [
+              1235.0,
+              385.0
+            ],
+            [
+              1395.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-KPL",
+        "code": "KPL",
+        "name": "R. Kpl Lab",
+        "area_m2": 15.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1435.0,
+              415.0
+            ],
+            [
+              1435.0,
+              500.0
+            ],
+            [
+              1395.0,
+              500.0
+            ],
+            [
+              1395.0,
+              415.0
+            ],
+            [
+              1435.0,
+              415.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "room",
+        "id": "LT_3-315",
+        "code": "315",
+        "name": "Lab Komp",
+        "area_m2": 56.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1545.0,
+              385.0
+            ],
+            [
+              1545.0,
+              500.0
+            ],
+            [
+              1435.0,
+              500.0
+            ],
+            [
+              1435.0,
+              385.0
+            ],
+            [
+              1545.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "corridor",
+        "id": "LT_3-corridor-1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            60.0,
+            362.0
+          ],
+          [
+            1520.0,
+            362.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "corridor",
+        "id": "LT_3-corridor-2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            832.0,
+            362.0
+          ],
+          [
+            832.0,
+            1050.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "APAR",
+        "id": "LT_3-APAR-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          648.9,
+          338.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "APAR",
+        "id": "LT_3-APAR-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1493.0,
+          339.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "APAR",
+        "id": "LT_3-APAR-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.8,
+          355.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "APAR",
+        "id": "LT_3-APAR-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1492.0,
+          468.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "APAR",
+        "id": "LT_3-APAR-05",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          858.3,
+          1061.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "Hydrant",
+        "id": "LT_3-Hydrant-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          761.4,
+          342.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "Hydrant",
+        "id": "LT_3-Hydrant-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.9,
+          346.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "Hydrant",
+        "id": "LT_3-Hydrant-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1530.0,
+          380.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_3",
+        "type": "Hydrant",
+        "id": "LT_3-Hydrant-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          859.4,
+          1077.9
+        ]
+      }
+    }
+  ]
+}

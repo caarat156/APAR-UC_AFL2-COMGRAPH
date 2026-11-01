@@ -1053,48 +1053,6 @@
       "type": "Feature",
       "properties": {
         "floor": "LT_7",
-        "type": "corridor",
-        "id": "LT_7-corridor-1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            70.0,
-            362.0
-          ],
-          [
-            1540.0,
-            362.0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_7",
-        "type": "corridor",
-        "id": "LT_7-corridor-2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            858.0,
-            362.0
-          ],
-          [
-            858.0,
-            1050.0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_7",
         "type": "APAR",
         "id": "LT_7-APAR-01",
         "inside_building": true
@@ -1216,6 +1174,115 @@
         "coordinates": [
           833.6,
           766.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "corridor",
+        "id": "LT_7-COR-01",
+        "through": [
+          "PREF"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.0,
+            360.0
+          ],
+          [
+            668.0,
+            360.0
+          ],
+          [
+            900.0,
+            360.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "corridor",
+        "id": "LT_7-COR-02",
+        "through": [
+          "PREF"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            858.0,
+            360.0
+          ],
+          [
+            858.0,
+            782.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "corridor",
+        "id": "LT_7-COR-03",
+        "through": [
+          "703-704"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            858.0,
+            782.0
+          ],
+          [
+            858.0,
+            1050.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_7",
+        "type": "corridor",
+        "id": "LT_7-COR-04",
+        "through": [
+          "PREF",
+          "711"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            900.0,
+            360.0
+          ],
+          [
+            900.0,
+            405.0
+          ],
+          [
+            1215.0,
+            405.0
+          ],
+          [
+            1300.0,
+            405.0
+          ]
         ]
       }
     }
