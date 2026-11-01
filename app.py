@@ -1,4 +1,127 @@
-import streamlit as st
+import json
+from pathlib import Path
 
-st.title("APAR Finder")
-st.write("Setup berhasil!")
+import matplotlib.pyplot as plt
+import networkx as nx
+import pandas as pd
+import streamlit as st
+from shapely.geometry import Point, LineString, shape
+from shapely.ops import nearest_points, unary_union
+
+DATA_DIR = Path(__file__).resolve().parent / "data"
+FLOORS = ["LT_1", "LT_2", "LT_2A", "LT_3", "LT_4", "LT_5", "LT_6", "LT_7"]
+PX_PER_M = 15.0  # Skala: 15 piksel = 1 meter
+
+
+@st.cache_data
+def load_floor(floor):
+    gj = json.loads((DATA_DIR / f"{floor}.geojson").read_text(encoding="utf-8"))
+    result = {
+        "footprint": None,
+        "rooms": [],
+        "corridors": [],
+        "apar": [],
+        "hydrant": []
+    }
+    for feat in gj["features"]:
+        geom = shape(feat["geometry"])
+        props = feat["properties"]
+        kind = props["type"]
+        if kind == "footprint":
+            result["footprint"] = geom
+        elif kind == "room":
+            result["rooms"].append({
+                "code": props["code"],
+                "name": props["name"],
+                "geom": geom,
+                "area_m2": props.get("area_m2", 0.0)
+            })
+        elif kind == "corridor":
+            result["corridors"].append(geom)
+        elif kind == "APAR":
+            result["apar"].append({
+                "id": props.get("id", "APAR"),
+                "geom": geom,
+                "inside": props.get("inside_building", True)
+            })
+        elif kind == "Hydrant":
+            result["hydrant"].append({
+                "id": props.get("id", "Hydrant"),
+                "geom": geom
+            })
+    return result
+
+
+def build_corridor_graph(corridor_lines):
+    G = nx.Graph()
+    if not corridor_lines:
+        return G
+
+    for line in corridor_lines:
+        coords = list(line.coords)
+        for i in range(len(coords) - 1):
+            p1, p2 = coords[i], coords[i + 1]
+            dist = Point(p1).distance(Point(p2))
+            G.add_edge(p1, p2, weight=dist)
+
+    # Hubungkan persimpangan jika ada garis koridor yang berpotongan
+    for i in range(len(corridor_lines)):
+        for j in range(i + 1, len(corridor_lines)):
+            l1, l2 = corridor_lines[i], corridor_lines[j]
+            inter = l1.intersection(l2)
+            if not inter.is_empty and inter.geom_type == "Point":
+                ip = (inter.x, inter.y)
+                for l in (l1, l2):
+                    c = list(l.coords)
+                    p1, p2 = c[0], c[-1]
+                    d1 = Point(ip).distance(Point(p1))
+                    d2 = Point(ip).distance(Point(p2))
+                    G.add_edge(ip, p1, weight=d1)
+                    G.add_edge(ip, p2, weight=d2)
+    return G
+
+
+def compute_corridor_route(graph, corridor_union, pt_start, pt_end):
+    """
+    Menghitung rute koridor (real walking distance) dari pt_start ke pt_end.
+    Trik Computational Geometry:
+    1. Proyeksikan pt_start dan pt_end ke titik terdekat di sumbu koridor.
+    2. Hubungkan ke Graph, cari Shortest Path dengan Dijkstra (networkx).
+    3. Kembalikan rute lengkap: Start -> Entry -> Jalur Koridor -> Exit -> End.
+    """
+    if corridor_union.is_empty or graph.number_of_nodes() == 0:
+        # Fallback garis lurus jika tidak ada koridor
+        line = LineString([pt_start, pt_end])
+        return [pt_start, pt_end], line.length
+
+    # 1. Proyeksi titik ke koridor
+    proj_start = nearest_points(corridor_union, pt_start)[0]
+    proj_end = nearest_points(corridor_union, pt_end)[0]
+
+    node_start = (proj_start.x, proj_start.y)
+    node_end = (proj_end.x, proj_end.y)
+
+    H = graph.copy()
+
+    # Hubungkan node_start ke node terdekat di graph
+    nodes = list(graph.nodes)
+    closest_start = min(nodes, key=lambda n: Point(n).distance(proj_start))
+    H.add_edge(node_start, closest_start, weight=Point(node_start).distance(Point(closest_start)))
+
+    # Hubungkan node_end ke node terdekat di graph
+    closest_end = min(nodes, key=lambda n: Point(n).distance(proj_end))
+    H.add_edge(node_end, closest_end, weight=Point(node_end).distance(Point(closest_end)))
+
+    try:
+        path_nodes = nx.shortest_path(H, source=node_start, target=node_end, weight="weight")
+        corridor_len = nx.shortest_path_length(H, source=node_start, target=node_end, weight="weight")
+        
+        # Jarak total = (start -> pintu/koridor) + (jalan koridor) + (koridor -> APAR)
+        d_in = pt_start.distance(proj_start)
+        d_out = proj_end.distance(pt_end)
+        total_px = d_in + corridor_len + d_out
+        full_coords = [(pt_start.x, pt_start.y)] + path_nodes + [(pt_end.x, pt_end.y)]
+        return full_coords, total_px
+    except (nx.NetworkXNoPath, nx.NodeNotFound):
+        line = LineString([pt_start, pt_end])
+        return [pt_start, pt_end], line.length
