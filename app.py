@@ -21,49 +21,44 @@ WALK_SPEED_MPS = 1.2  # Kecepatan jalan rata-rata evakuasi darurat (1.2 m/s)
 st.set_page_config(
     page_title="APAR-UC | GIS Finder & Coverage Analysis",
     layout="wide",
-    page_icon="🧯",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for Modern, Clean & Professional UI
+# Custom CSS for Professional Enterprise UI (Solid colors, clean typography)
 st.markdown("""
 <style>
-    /* Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     
     html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #0f172a;
     }
 
     /* Main Container Padding */
     .block-container {
-        padding-top: 1.6rem;
+        padding-top: 1.5rem;
         padding-bottom: 2rem;
         max-width: 95% !important;
     }
 
-    /* Top Hero Banner */
+    /* Top Banner - Solid Corporate Style */
     .hero-banner {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f766e 100%);
-        color: white;
+        background-color: #1e293b;
+        color: #ffffff;
         padding: 24px 28px;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.25);
+        border-radius: 8px;
         margin-bottom: 24px;
-        border-left: 6px solid #f97316;
+        border-left: 5px solid #0284c7;
     }
     .hero-title {
-        font-size: 26px;
-        font-weight: 800;
+        font-size: 24px;
+        font-weight: 700;
         margin: 0;
-        letter-spacing: -0.5px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
+        letter-spacing: -0.3px;
     }
     .hero-subtitle {
         font-size: 13.5px;
-        color: #cbd5e1;
+        color: #94a3b8;
         margin-top: 6px;
         margin-bottom: 0;
         font-weight: 400;
@@ -71,20 +66,19 @@ st.markdown("""
     .hero-badges {
         display: flex;
         gap: 8px;
-        margin-top: 10px;
+        margin-top: 12px;
     }
     .hero-badge {
-        background: rgba(255, 255, 255, 0.12);
-        backdrop-filter: blur(8px);
+        background-color: #334155;
         font-size: 11px;
-        font-weight: 600;
-        padding: 3px 10px;
-        border-radius: 20px;
+        font-weight: 500;
+        padding: 4px 10px;
+        border-radius: 4px;
         color: #f1f5f9;
-        border: 1px solid rgba(255, 255, 255, 0.15);
+        border: 1px solid #475569;
     }
 
-    /* KPI Metric Cards */
+    /* KPI Metric Cards - Flat Minimalist Style */
     .kpi-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -93,61 +87,43 @@ st.markdown("""
     }
     .kpi-card {
         background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
         padding: 16px 18px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
         position: relative;
-        overflow: hidden;
     }
-    .kpi-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
-    }
-    .kpi-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 4px;
-        height: 100%;
-    }
-    .kpi-card.red::before { background: #ef4444; }
-    .kpi-card.orange::before { background: #f97316; }
-    .kpi-card.blue::before { background: #3b82f6; }
-    .kpi-card.green::before { background: #10b981; }
+    .kpi-card.red { border-top: 3px solid #dc2626; }
+    .kpi-card.orange { border-top: 3px solid #ea580c; }
+    .kpi-card.blue { border-top: 3px solid #0284c7; }
+    .kpi-card.green { border-top: 3px solid #16a34a; }
 
     .kpi-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         color: #64748b;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
     .kpi-value {
-        font-size: 26px;
-        font-weight: 800;
+        font-size: 24px;
+        font-weight: 700;
         color: #0f172a;
         margin: 6px 0 2px 0;
         letter-spacing: -0.5px;
     }
     .kpi-sub {
         font-size: 11.5px;
-        color: #94a3b8;
-        font-weight: 500;
+        color: #64748b;
+        font-weight: 400;
     }
 
-    /* Styled Notice Box */
+    /* Notice Box */
     .notice-box {
-        background: #f8fafc;
+        background-color: #f8fafc;
         border: 1px solid #cbd5e1;
-        border-left: 4px solid #3b82f6;
+        border-left: 4px solid #0284c7;
         padding: 10px 14px;
-        border-radius: 8px;
+        border-radius: 4px;
         font-size: 12.5px;
         color: #334155;
         margin-bottom: 16px;
@@ -156,14 +132,12 @@ st.markdown("""
     /* Map Card Frame */
     .map-frame {
         background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 16px;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
         padding: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
         margin-bottom: 20px;
     }
 
-    /* Hide standard Streamlit header & footer decorations */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
 </style>
@@ -217,16 +191,16 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
 
     # 1. Batas Gedung (Footprint)
     if data["footprint"]:
-        plot_polygon(ax, data["footprint"], facecolor="#f1f5f9", edgecolor="#334155", linewidth=2.4)
+        plot_polygon(ax, data["footprint"], facecolor="#f1f5f9", edgecolor="#334155", linewidth=2.0)
 
     # 2. Koridor Gedung
     for line in data["corridors"]:
         lx, ly = line.xy
-        ax.plot(lx, ly, color="#059669", linewidth=3.2, linestyle="--", alpha=0.9, zorder=2)
+        ax.plot(lx, ly, color="#059669", linewidth=2.8, linestyle="--", alpha=0.9, zorder=2)
 
     # 3. Buffer Lingkaran 15 Meter (Analisis Jangkauan)
     if buffer_union is not None and not buffer_union.is_empty:
-        plot_polygon(ax, buffer_union, facecolor="#38bdf8", alpha=0.25, edgecolor="#0284c7", linewidth=1.6, zorder=3)
+        plot_polygon(ax, buffer_union, facecolor="#e0f2fe", alpha=0.4, edgecolor="#0284c7", linewidth=1.4, zorder=3)
 
     # 4. Gambar Ruangan
     for r in data["rooms"]:
@@ -234,17 +208,16 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
         geom = r["geom"]
         
         if covered_rooms is not None:
-            # Mode Jangkauan APAR: Hijau (terjangkau) vs Merah (blind spot)
             if code in covered_rooms:
                 fc, ec = "#dcfce7", "#16a34a"  # Hijau lembut
             else:
                 fc, ec = "#fee2e2", "#dc2626"  # Merah lembut
         elif selected_room and code == selected_room["code"]:
-            fc, ec = "#fed7aa", "#ea580c"      # Oranye highlight
+            fc, ec = "#ffedd5", "#ea580c"      # Oranye highlight
         else:
             fc, ec = "#fef9c3", "#ca8a04"      # Kuning lembut default
 
-        plot_polygon(ax, geom, facecolor=fc, edgecolor=ec, linewidth=1.1, zorder=4)
+        plot_polygon(ax, geom, facecolor=fc, edgecolor=ec, linewidth=1.0, zorder=4)
         c = geom.representative_point()
         ax.text(c.x, c.y, code, ha="center", va="center", fontsize=6.2, fontweight="bold", color="#1e293b", zorder=5)
 
@@ -253,25 +226,20 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
         rx = [p.x if hasattr(p, "x") else p[0] for p in route_coords]
         ry = [p.y if hasattr(p, "y") else p[1] for p in route_coords]
         
-        # Garis rute utama (vibrant red glow)
-        ax.plot(rx, ry, color="#dc2626", linewidth=3.6, linestyle="-", solid_capstyle='round', zorder=7, label="Jalur Koridor ke APAR")
-        
-        # Titik start (Centroid Ruangan Sumber Kebakaran)
-        ax.scatter([rx[0]], [ry[0]], c="#f97316", s=100, edgecolors="white", linewidth=2.0, zorder=8, label="Centroid Ruangan")
-        
-        # Titik target APAR terpilih (Lingkaran target)
-        ax.scatter([rx[-1]], [ry[-1]], c="#dc2626", s=130, marker='*', edgecolors="white", linewidth=1.2, zorder=9, label="Target APAR Terdekat")
+        ax.plot(rx, ry, color="#dc2626", linewidth=3.2, linestyle="-", solid_capstyle='round', zorder=7, label="Jalur Koridor ke APAR")
+        ax.scatter([rx[0]], [ry[0]], c="#ea580c", s=90, edgecolors="white", linewidth=1.8, zorder=8, label="Centroid Ruangan")
+        ax.scatter([rx[-1]], [ry[-1]], c="#dc2626", s=110, marker='s', edgecolors="white", linewidth=1.2, zorder=9, label="Target APAR Terdekat")
 
     # 6. Titik APAR dan Hydrant
     apar_x = [a["geom"].x for a in data["apar"]]
     apar_y = [a["geom"].y for a in data["apar"]]
     if apar_x:
-        ax.scatter(apar_x, apar_y, c="#ef4444", s=65, edgecolors="white", linewidth=1.2, zorder=8, label="Titik APAR")
+        ax.scatter(apar_x, apar_y, c="#dc2626", s=60, edgecolors="white", linewidth=1.2, zorder=8, label="Titik APAR")
 
     hydrant_x = [h["geom"].x for h in data["hydrant"]]
     hydrant_y = [h["geom"].y for h in data["hydrant"]]
     if hydrant_x:
-        ax.scatter(hydrant_x, hydrant_y, c="#2563eb", s=65, edgecolors="white", linewidth=1.2, zorder=8, label="Titik Hydrant")
+        ax.scatter(hydrant_x, hydrant_y, c="#2563eb", s=60, edgecolors="white", linewidth=1.2, zorder=8, label="Titik Hydrant")
 
     ax.set_aspect("equal")
     if data["footprint"]:
@@ -279,14 +247,14 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
         pad_x = (maxx - minx) * 0.02
         pad_y = (maxy - miny) * 0.04
         ax.set_xlim(minx - pad_x, maxx + pad_x)
-        ax.set_ylim(maxy + pad_y, miny - pad_y)  # Inverted Y
+        ax.set_ylim(maxy + pad_y, miny - pad_y)
     else:
         ax.invert_yaxis()
     ax.axis("off")
     
     handles, labels = ax.get_legend_handles_labels()
     if handles:
-        ax.legend(handles, labels, loc="lower right", framealpha=0.92, facecolor="#ffffff", edgecolor="#cbd5e1", fontsize=8.5)
+        ax.legend(handles, labels, loc="lower right", framealpha=0.95, facecolor="#ffffff", edgecolor="#cbd5e1", fontsize=8.5)
     
     fig.tight_layout()
     return fig
@@ -301,15 +269,14 @@ if "current_room_code" not in st.session_state:
     st.session_state["current_room_code"] = None
 
 all_rooms_index = get_all_rooms_index()
-search_labels = ["-- Ketik / Pilih Ruangan dari Seluruh Lantai --"] + [item["label"] for item in all_rooms_index]
+search_labels = ["-- Pilih Ruangan dari Seluruh Lantai --"] + [item["label"] for item in all_rooms_index]
 
 
 # ==========================================
 # SIDEBAR CONTROLS & NAVIGATION
 # ==========================================
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/4/4b/Logo_Universitas_Ciputra.png", width=180)
-    st.markdown("### ⚙️ Kontrol & Navigasi")
+    st.markdown("### Kontrol & Navigasi")
     
     # 1. Global Search Box
     def on_search_select():
@@ -320,14 +287,14 @@ with st.sidebar:
                 st.session_state["floor_selector"] = matched["floor"]
                 st.session_state["current_room_code"] = matched["code"]
 
-    st.markdown("**🔍 Pencarian Ruangan Global**")
+    st.markdown("**Pencarian Ruangan Global**")
     st.selectbox(
         "Cari ruangan di seluruh lantai:",
         search_labels,
         key="global_search_box",
         on_change=on_search_select,
         label_visibility="collapsed",
-        help="Ketik atau pilih nomor ruangan untuk langsung menuju denah lantai dan memilih ruangan tersebut."
+        help="Pilih nomor ruangan untuk mengarahkan denah lantai."
     )
     
     st.divider()
@@ -336,7 +303,7 @@ with st.sidebar:
     def on_floor_change():
         st.session_state["current_room_code"] = None
 
-    st.markdown("**🏢 Pemilihan Lantai**")
+    st.markdown("**Pemilihan Lantai**")
     floor = st.selectbox(
         "Pilih Lantai:",
         FLOORS,
@@ -350,22 +317,22 @@ with st.sidebar:
     st.divider()
 
     # 3. Pemilihan Mode Operasi
-    st.markdown("**🛠️ Mode Operasi GIS**")
+    st.markdown("**Mode Operasi GIS**")
     mode = st.radio(
         "Pilih Fitur Analisis:",
-        ["🧭 Pencarian APAR Terdekat (Real Walking)", "🛡️ Analisis Jangkauan Proteksi (Buffer 15m)"],
+        ["Pencarian APAR Terdekat (Real Walking)", "Analisis Jangkauan Proteksi (Buffer 15m)"],
         label_visibility="collapsed"
     )
 
     st.divider()
 
     # Summary Info Lantai Terpilih
-    st.markdown("##### 📊 Ringkasan Data Lantai")
+    st.markdown("##### Ringkasan Data Lantai")
     c_info1, c_info2 = st.columns(2)
     c_info1.metric("Ruangan", len(data["rooms"]))
     c_info2.metric("APAR", len(data["apar"]))
     
-    st.caption("Skala Peta: **15 px = 1 meter** • Standar Proteksi: **Permenakertrans No. 04/1980**")
+    st.caption("Skala Peta: **15 px = 1 meter** | Standar: **Permenakertrans No. 04/1980**")
 
 
 # ==========================================
@@ -375,31 +342,30 @@ with st.sidebar:
 st.markdown(f"""
 <div class="hero-banner">
     <div class="hero-title">
-        <span>🧯 APAR-UC: GIS Finder & Emergency Routing</span>
+        APAR-UC: GIS Finder & Emergency Routing
     </div>
     <div class="hero-subtitle">
         Sistem Informasi Geografis Penentuan Rute Terdekat ke Titik APAR dan Analisis Jangkauan Proteksi Gedung Utama Universitas Ciputra
     </div>
     <div class="hero-badges">
-        <span class="hero-badge">🏢 {floor}</span>
-        <span class="hero-badge">📍 {len(data['apar'])} Unit APAR</span>
-        <span class="hero-badge">🚪 {len(data['rooms'])} Ruangan Terdaftar</span>
-        <span class="hero-badge">⚡ Dijkstra Shortest Path</span>
+        <span class="hero-badge">{floor}</span>
+        <span class="hero-badge">{len(data['apar'])} Unit APAR</span>
+        <span class="hero-badge">{len(data['rooms'])} Ruangan Terdaftar</span>
+        <span class="hero-badge">Algoritma Dijkstra</span>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 
-if mode == "🧭 Pencarian APAR Terdekat (Real Walking)":
+if mode == "Pencarian APAR Terdekat (Real Walking)":
     sorted_rooms = sorted(data["rooms"], key=lambda r: natural_key(r["code"]))
     room_options = {f"{r['code']} - {r['name']}": r for r in sorted_rooms}
 
     if not room_options:
-        st.warning("⚠️ Tidak ditemukan data ruangan pada lantai ini.")
+        st.warning("Tidak ditemukan data ruangan pada lantai ini.")
     elif not data["apar"]:
-        st.warning("⚠️ Tidak ditemukan titik APAR terdaftar pada lantai ini.")
+        st.warning("Tidak ditemukan titik APAR terdaftar pada lantai ini.")
     else:
-        # Tentukan default index
         default_idx = 0
         if st.session_state["current_room_code"]:
             for idx, r in enumerate(sorted_rooms):
@@ -410,7 +376,7 @@ if mode == "🧭 Pencarian APAR Terdekat (Real Walking)":
         # Bar Kontrol Ruangan
         col_sel_room, col_space = st.columns([2, 1])
         with col_sel_room:
-            st.markdown("##### 🚪 Pilih Ruangan Sumber Kebakaran:")
+            st.markdown("##### Pilih Ruangan Sumber Kebakaran:")
             selected_key = st.selectbox(
                 "Ruangan Sumber Kebakaran",
                 list(room_options.keys()),
@@ -427,44 +393,32 @@ if mode == "🧭 Pencarian APAR Terdekat (Real Walking)":
         results = []
         for r in raw_results:
             walk_m = round(r["walk_px"] / PX_PER_M, 2)
-            euc_m = round(r["euc_px"] / PX_PER_M, 2)
             est_sec = round(walk_m / WALK_SPEED_MPS)
             results.append({
                 "id": r["id"],
                 "apar_pt": r["apar_pt"],
-                "euc_m": euc_m,
                 "walk_m": walk_m,
-                "diff_m": round(walk_m - euc_m, 2),
                 "est_time": f"{est_sec} detik",
                 "route": r["route"]
             })
 
         nearest = results[0] if results else None
 
-        # Kartu KPI Metrics yang Bersih & Rapi
+        # Kartu KPI Metrics - Solid Flat Design
         if nearest:
             st.markdown(f"""
             <div class="kpi-container">
                 <div class="kpi-card red">
-                    <div class="kpi-header">📍 APAR Terdekat <span style="font-size:16px">🧯</span></div>
+                    <div class="kpi-header">APAR Terdekat</div>
                     <div class="kpi-value">{nearest['id']}</div>
-                    <div class="kpi-sub">Unit Proteksi Prioritas #1</div>
+                    <div class="kpi-sub">Unit Proteksi Prioritas 1</div>
                 </div>
                 <div class="kpi-card orange">
-                    <div class="kpi-header">🚶 Real Walking Distance <span style="font-size:16px">⏱️</span></div>
+                    <div class="kpi-header">Real Walking Distance</div>
                     <div class="kpi-value">{nearest['walk_m']} m</div>
                     <div class="kpi-sub">Estimasi Tempuh: {nearest['est_time']}</div>
                 </div>
-                <div class="kpi-card blue">
-                    <div class="kpi-header">📏 Euclidean Distance <span style="font-size:16px">📐</span></div>
-                    <div class="kpi-value">{nearest['euc_m']} m</div>
-                    <div class="kpi-sub">Garis Lurus (Ideal)</div>
-                </div>
-                <div class="kpi-card green">
-                    <div class="kpi-header">🔄 Selisih Jarak Nyata <span style="font-size:16px">🛤️</span></div>
-                    <div class="kpi-value">+{nearest['diff_m']} m</div>
-                    <div class="kpi-sub">Efek Dinding & Koridor Fisik</div>
-                </div>
+              
             </div>
             """, unsafe_allow_html=True)
 
@@ -472,7 +426,7 @@ if mode == "🧭 Pencarian APAR Terdekat (Real Walking)":
             if via == "tetangga":
                 st.markdown("""
                 <div class="notice-box">
-                    ℹ️ <b>Info Akses Ruangan Baris Dalam:</b> Ruangan ini tidak berbatasan langsung dengan koridor utama. Rute evakuasi diarahkan melalui pintu ruangan tetangga yang berbagi dinding.
+                    <b>Info Akses Ruangan Baris Dalam:</b> Ruangan ini tidak berbatasan langsung dengan koridor utama. Rute evakuasi diarahkan melalui pintu ruangan tetangga yang berbagi dinding.
                 </div>
                 """, unsafe_allow_html=True)
 
@@ -485,13 +439,11 @@ if mode == "🧭 Pencarian APAR Terdekat (Real Walking)":
 
         # Tabel Top 3 APAR Terdekat
         if results:
-            st.markdown("##### 📋 Rekomendasi 3 Unit APAR Terdekat:")
+            st.markdown("##### Rekomendasi 3 Unit APAR Terdekat:")
             df_display = pd.DataFrame([{
                 "Prioritas": f"Peringkat #{idx+1}",
                 "ID APAR": r["id"],
                 "Jarak Jalan Nyata (Koridor)": f"{r['walk_m']} meter",
-                "Jarak Lurus (Euclidean)": f"{r['euc_m']} meter",
-                "Selisih Belokan": f"+{r['diff_m']} meter",
                 "Estimasi Tempuh Jalan": r["est_time"]
             } for idx, r in enumerate(results[:3])])
             st.dataframe(df_display, use_container_width=True, hide_index=True)
@@ -522,22 +474,22 @@ else:
     st.markdown(f"""
     <div class="kpi-container">
         <div class="kpi-card blue">
-            <div class="kpi-header">🏢 Total Ruangan <span style="font-size:16px">🚪</span></div>
+            <div class="kpi-header">Total Ruangan</div>
             <div class="kpi-value">{total_rooms}</div>
             <div class="kpi-sub">Lantai {floor}</div>
         </div>
         <div class="kpi-card green">
-            <div class="kpi-header">✅ Terproteksi Penuh <span style="font-size:16px">🛡️</span></div>
+            <div class="kpi-header">Terproteksi Penuh</div>
             <div class="kpi-value">{pct}%</div>
             <div class="kpi-sub">{n_covered} dari {total_rooms} Ruangan (Radius 15m)</div>
         </div>
         <div class="kpi-card red">
-            <div class="kpi-header">❌ Blind Spot (Belum Tercover) <span style="font-size:16px">⚠️</span></div>
+            <div class="kpi-header">Blind Spot (Belum Tercover)</div>
             <div class="kpi-value">{n_uncovered}</div>
             <div class="kpi-sub">Ruangan Perlu Tambahan APAR</div>
         </div>
         <div class="kpi-card orange">
-            <div class="kpi-header">🧯 Total Unit APAR <span style="font-size:16px">📍</span></div>
+            <div class="kpi-header">Total Unit APAR</div>
             <div class="kpi-value">{len(data['apar'])}</div>
             <div class="kpi-sub">Unit Terpasang di {floor}</div>
         </div>
@@ -551,7 +503,7 @@ else:
     st.markdown('</div>', unsafe_allow_html=True)
 
     if uncovered_rooms:
-        st.markdown(f"##### ⚠️ Daftar Ruangan Blind Spot di {floor} (Di luar radius 15m Permenakertrans No. 04/1980):")
+        st.markdown(f"##### Daftar Ruangan Blind Spot di {floor} (Di luar radius 15m Permenakertrans No. 04/1980):")
         df_uncovered = pd.DataFrame([{
             "Kode Ruangan": r["code"],
             "Nama Ruangan": r["name"],
@@ -560,4 +512,4 @@ else:
         } for r in uncovered_rooms])
         st.dataframe(df_uncovered, use_container_width=True, hide_index=True)
     else:
-        st.success(f"🎉 **Proteksi Maksimal:** Seluruh ruangan di {floor} telah terlindungi secara menyeluruh dalam radius 15 meter!")
+        st.success(f"Proteksi Maksimal: Seluruh ruangan di {floor} telah terlindungi secara menyeluruh dalam radius 15 meter.")
