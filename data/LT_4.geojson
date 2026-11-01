@@ -1,0 +1,1337 @@
+{
+  "type": "FeatureCollection",
+  "name": "LT_4",
+  "metadata": {
+    "source_image": "Denah Lantai 4.jpeg",
+    "coordinate_system": "source image pixels (x right, y down)",
+    "image_size": [
+      1600,
+      1280
+    ],
+    "px_per_m": 15.0
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "footprint"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              48.0,
+              202.0
+            ],
+            [
+              1568.0,
+              202.0
+            ],
+            [
+              1568.0,
+              515.0
+            ],
+            [
+              1000.0,
+              515.0
+            ],
+            [
+              1000.0,
+              1080.0
+            ],
+            [
+              650.0,
+              1080.0
+            ],
+            [
+              650.0,
+              515.0
+            ],
+            [
+              48.0,
+              515.0
+            ],
+            [
+              48.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-421",
+        "code": "421",
+        "name": "Lab. Sensori",
+        "area_m2": 59.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              198.0,
+              202.0
+            ],
+            [
+              198.0,
+              355.0
+            ],
+            [
+              110.0,
+              355.0
+            ],
+            [
+              110.0,
+              202.0
+            ],
+            [
+              198.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-420",
+        "code": "420",
+        "name": "Lab. Penelitian",
+        "area_m2": 117.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              370.0,
+              202.0
+            ],
+            [
+              370.0,
+              355.0
+            ],
+            [
+              198.0,
+              355.0
+            ],
+            [
+              198.0,
+              202.0
+            ],
+            [
+              370.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-418",
+        "code": "418",
+        "name": "R. Steril & Autoclave",
+        "area_m2": 6.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              422.0,
+              215.0
+            ],
+            [
+              422.0,
+              245.0
+            ],
+            [
+              370.0,
+              245.0
+            ],
+            [
+              370.0,
+              215.0
+            ],
+            [
+              422.0,
+              215.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-419",
+        "code": "419",
+        "name": "R. Laboran",
+        "area_m2": 11.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              422.0,
+              255.0
+            ],
+            [
+              422.0,
+              305.0
+            ],
+            [
+              370.0,
+              305.0
+            ],
+            [
+              370.0,
+              255.0
+            ],
+            [
+              422.0,
+              255.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-419a",
+        "code": "419a",
+        "name": "R. Penyimpanan",
+        "area_m2": 10.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              422.0,
+              310.0
+            ],
+            [
+              422.0,
+              355.0
+            ],
+            [
+              370.0,
+              355.0
+            ],
+            [
+              370.0,
+              310.0
+            ],
+            [
+              422.0,
+              310.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-417",
+        "code": "417",
+        "name": "Lab. Penelitian",
+        "area_m2": 165.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              665.0,
+              202.0
+            ],
+            [
+              665.0,
+              355.0
+            ],
+            [
+              422.0,
+              355.0
+            ],
+            [
+              422.0,
+              202.0
+            ],
+            [
+              665.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-408",
+        "code": "408",
+        "name": "FA",
+        "area_m2": 98.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1125.0,
+              202.0
+            ],
+            [
+              1125.0,
+              355.0
+            ],
+            [
+              980.0,
+              355.0
+            ],
+            [
+              980.0,
+              202.0
+            ],
+            [
+              1125.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-409",
+        "code": "409",
+        "name": "Pantry & Gudang FA/PM",
+        "area_m2": 90.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1258.0,
+              202.0
+            ],
+            [
+              1258.0,
+              355.0
+            ],
+            [
+              1125.0,
+              355.0
+            ],
+            [
+              1125.0,
+              202.0
+            ],
+            [
+              1258.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-410",
+        "code": "410",
+        "name": "PM",
+        "area_m2": 103.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1410.0,
+              202.0
+            ],
+            [
+              1410.0,
+              355.0
+            ],
+            [
+              1258.0,
+              355.0
+            ],
+            [
+              1258.0,
+              202.0
+            ],
+            [
+              1410.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-411",
+        "code": "411",
+        "name": "ICT",
+        "area_m2": 71.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1515.0,
+              202.0
+            ],
+            [
+              1515.0,
+              355.0
+            ],
+            [
+              1410.0,
+              355.0
+            ],
+            [
+              1410.0,
+              202.0
+            ],
+            [
+              1515.0,
+              202.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-422",
+        "code": "422",
+        "name": "Kelas",
+        "area_m2": 87.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              220.0,
+              400.0
+            ],
+            [
+              220.0,
+              515.0
+            ],
+            [
+              48.0,
+              515.0
+            ],
+            [
+              48.0,
+              400.0
+            ],
+            [
+              220.0,
+              400.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-423",
+        "code": "423",
+        "name": "Kelas",
+        "area_m2": 76.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              370.0,
+              400.0
+            ],
+            [
+              370.0,
+              515.0
+            ],
+            [
+              220.0,
+              515.0
+            ],
+            [
+              220.0,
+              400.0
+            ],
+            [
+              370.0,
+              400.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-424",
+        "code": "424",
+        "name": "Storage Alat2 FTP",
+        "area_m2": 27.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              435.0,
+              400.0
+            ],
+            [
+              435.0,
+              495.0
+            ],
+            [
+              370.0,
+              495.0
+            ],
+            [
+              370.0,
+              400.0
+            ],
+            [
+              435.0,
+              400.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-425",
+        "code": "425",
+        "name": "Rg. Dosen FTP",
+        "area_m2": 71.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              605.0,
+              400.0
+            ],
+            [
+              605.0,
+              495.0
+            ],
+            [
+              435.0,
+              495.0
+            ],
+            [
+              435.0,
+              400.0
+            ],
+            [
+              605.0,
+              400.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-425b",
+        "code": "425b",
+        "name": "R. Kaprogdi FTP",
+        "area_m2": 8.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              665.0,
+              402.0
+            ],
+            [
+              665.0,
+              435.0
+            ],
+            [
+              605.0,
+              435.0
+            ],
+            [
+              605.0,
+              402.0
+            ],
+            [
+              665.0,
+              402.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-425a",
+        "code": "425a",
+        "name": "R. Dekan FTP",
+        "area_m2": 10.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              735.0,
+              408.0
+            ],
+            [
+              735.0,
+              440.0
+            ],
+            [
+              665.0,
+              440.0
+            ],
+            [
+              665.0,
+              408.0
+            ],
+            [
+              735.0,
+              408.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-407",
+        "code": "407",
+        "name": "Academic Support FTO",
+        "area_m2": 31.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              822.0,
+              408.0
+            ],
+            [
+              822.0,
+              490.0
+            ],
+            [
+              735.0,
+              490.0
+            ],
+            [
+              735.0,
+              408.0
+            ],
+            [
+              822.0,
+              408.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-406",
+        "code": "406",
+        "name": "SEH - DLB",
+        "area_m2": 106.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              495.0
+            ],
+            [
+              830.0,
+              640.0
+            ],
+            [
+              665.0,
+              640.0
+            ],
+            [
+              665.0,
+              495.0
+            ],
+            [
+              830.0,
+              495.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-405B",
+        "code": "405B",
+        "name": "Kelas / LCC",
+        "area_m2": 106.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              640.0
+            ],
+            [
+              830.0,
+              785.0
+            ],
+            [
+              665.0,
+              785.0
+            ],
+            [
+              665.0,
+              640.0
+            ],
+            [
+              830.0,
+              640.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-404",
+        "code": "404",
+        "name": "Lab. HTB",
+        "area_m2": 216.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              785.0
+            ],
+            [
+              830.0,
+              1080.0
+            ],
+            [
+              665.0,
+              1080.0
+            ],
+            [
+              665.0,
+              785.0
+            ],
+            [
+              830.0,
+              785.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-401",
+        "code": "401",
+        "name": "Academic Support CB / HTB",
+        "area_m2": 39.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              980.0,
+              402.0
+            ],
+            [
+              980.0,
+              495.0
+            ],
+            [
+              885.0,
+              495.0
+            ],
+            [
+              885.0,
+              402.0
+            ],
+            [
+              980.0,
+              402.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-402",
+        "code": "402",
+        "name": "R. Dosen HTB",
+        "area_m2": 69.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              980.0,
+              495.0
+            ],
+            [
+              980.0,
+              660.0
+            ],
+            [
+              885.0,
+              660.0
+            ],
+            [
+              885.0,
+              495.0
+            ],
+            [
+              980.0,
+              495.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-403",
+        "code": "403",
+        "name": "SEH",
+        "area_m2": 152.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              980.0,
+              680.0
+            ],
+            [
+              980.0,
+              1040.0
+            ],
+            [
+              885.0,
+              1040.0
+            ],
+            [
+              885.0,
+              680.0
+            ],
+            [
+              980.0,
+              680.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-416",
+        "code": "416",
+        "name": "Kaprogdi",
+        "area_m2": 12.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1025.0,
+              435.0
+            ],
+            [
+              1025.0,
+              495.0
+            ],
+            [
+              980.0,
+              495.0
+            ],
+            [
+              980.0,
+              435.0
+            ],
+            [
+              1025.0,
+              435.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-415",
+        "code": "415",
+        "name": "Kaprogdi",
+        "area_m2": 12.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1070.0,
+              435.0
+            ],
+            [
+              1070.0,
+              495.0
+            ],
+            [
+              1025.0,
+              495.0
+            ],
+            [
+              1025.0,
+              435.0
+            ],
+            [
+              1070.0,
+              435.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-414",
+        "code": "414",
+        "name": "Kaprogdi",
+        "area_m2": 12.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1115.0,
+              435.0
+            ],
+            [
+              1115.0,
+              495.0
+            ],
+            [
+              1070.0,
+              495.0
+            ],
+            [
+              1070.0,
+              435.0
+            ],
+            [
+              1115.0,
+              435.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-CBZ",
+        "code": "CBZ",
+        "name": "R. Dosen CBZ",
+        "area_m2": 72.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1290.0,
+              402.0
+            ],
+            [
+              1290.0,
+              495.0
+            ],
+            [
+              1115.0,
+              495.0
+            ],
+            [
+              1115.0,
+              402.0
+            ],
+            [
+              1290.0,
+              402.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-413",
+        "code": "413",
+        "name": "413",
+        "area_m2": 62.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1415.0,
+              402.0
+            ],
+            [
+              1415.0,
+              515.0
+            ],
+            [
+              1290.0,
+              515.0
+            ],
+            [
+              1290.0,
+              402.0
+            ],
+            [
+              1415.0,
+              402.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "room",
+        "id": "LT_4-412",
+        "code": "412",
+        "name": "ICT",
+        "area_m2": 75.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1565.0,
+              402.0
+            ],
+            [
+              1565.0,
+              515.0
+            ],
+            [
+              1415.0,
+              515.0
+            ],
+            [
+              1415.0,
+              402.0
+            ],
+            [
+              1565.0,
+              402.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "corridor",
+        "id": "LT_4-corridor-1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.0,
+            378.0
+          ],
+          [
+            1540.0,
+            378.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "corridor",
+        "id": "LT_4-corridor-2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            858.0,
+            378.0
+          ],
+          [
+            858.0,
+            1050.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "APAR",
+        "id": "LT_4-APAR-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          674.1,
+          352.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "APAR",
+        "id": "LT_4-APAR-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1516.5,
+          359.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "APAR",
+        "id": "LT_4-APAR-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.2,
+          374.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "APAR",
+        "id": "LT_4-APAR-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          883.8,
+          1056.6
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "Hydrant",
+        "id": "LT_4-Hydrant-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          786.1,
+          359.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "Hydrant",
+        "id": "LT_4-Hydrant-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.4,
+          365.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "Hydrant",
+        "id": "LT_4-Hydrant-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1557.2,
+          402.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_4",
+        "type": "Hydrant",
+        "id": "LT_4-Hydrant-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          884.3,
+          1075.2
+        ]
+      }
+    }
+  ]
+}

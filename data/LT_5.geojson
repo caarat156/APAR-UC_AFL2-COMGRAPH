@@ -1,0 +1,995 @@
+{
+  "type": "FeatureCollection",
+  "name": "LT_5",
+  "metadata": {
+    "source_image": "Denah Lantai 5.jpeg",
+    "coordinate_system": "source image pixels (x right, y down)",
+    "image_size": [
+      1600,
+      1280
+    ],
+    "px_per_m": 15.0
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "footprint"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              48.0,
+              188.0
+            ],
+            [
+              1568.0,
+              188.0
+            ],
+            [
+              1568.0,
+              500.0
+            ],
+            [
+              1000.0,
+              500.0
+            ],
+            [
+              1000.0,
+              1065.0
+            ],
+            [
+              650.0,
+              1065.0
+            ],
+            [
+              650.0,
+              500.0
+            ],
+            [
+              48.0,
+              500.0
+            ],
+            [
+              48.0,
+              188.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-516-517",
+        "code": "516-517",
+        "name": "Lab Histologi & PA",
+        "area_m2": 231.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              455.0,
+              188.0
+            ],
+            [
+              455.0,
+              340.0
+            ],
+            [
+              112.0,
+              340.0
+            ],
+            [
+              112.0,
+              188.0
+            ],
+            [
+              455.0,
+              188.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-515",
+        "code": "515",
+        "name": "Kelas",
+        "area_m2": 141.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              665.0,
+              188.0
+            ],
+            [
+              665.0,
+              340.0
+            ],
+            [
+              455.0,
+              340.0
+            ],
+            [
+              455.0,
+              188.0
+            ],
+            [
+              665.0,
+              188.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-507",
+        "code": "507",
+        "name": "Kelas",
+        "area_m2": 138.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1185.0,
+              188.0
+            ],
+            [
+              1185.0,
+              340.0
+            ],
+            [
+              980.0,
+              340.0
+            ],
+            [
+              980.0,
+              188.0
+            ],
+            [
+              1185.0,
+              188.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-508",
+        "code": "508",
+        "name": "Kelas",
+        "area_m2": 152.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1410.0,
+              188.0
+            ],
+            [
+              1410.0,
+              340.0
+            ],
+            [
+              1185.0,
+              340.0
+            ],
+            [
+              1185.0,
+              188.0
+            ],
+            [
+              1410.0,
+              188.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-509",
+        "code": "509",
+        "name": "Mini Theater",
+        "area_m2": 70.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1515.0,
+              188.0
+            ],
+            [
+              1515.0,
+              340.0
+            ],
+            [
+              1410.0,
+              340.0
+            ],
+            [
+              1410.0,
+              188.0
+            ],
+            [
+              1515.0,
+              188.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-518",
+        "code": "518",
+        "name": "Lab. Faal & Farmakologi",
+        "area_m2": 164.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              370.0,
+              385.0
+            ],
+            [
+              370.0,
+              500.0
+            ],
+            [
+              48.0,
+              500.0
+            ],
+            [
+              48.0,
+              385.0
+            ],
+            [
+              370.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-519",
+        "code": "519",
+        "name": "Kelas",
+        "area_m2": 131.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              665.0,
+              385.0
+            ],
+            [
+              665.0,
+              485.0
+            ],
+            [
+              370.0,
+              485.0
+            ],
+            [
+              370.0,
+              385.0
+            ],
+            [
+              665.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-506",
+        "code": "506",
+        "name": "CoE",
+        "area_m2": 118.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              390.0
+            ],
+            [
+              830.0,
+              555.0
+            ],
+            [
+              668.0,
+              555.0
+            ],
+            [
+              668.0,
+              390.0
+            ],
+            [
+              830.0,
+              390.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-505b",
+        "code": "505b",
+        "name": "Kelas",
+        "area_m2": 104.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              555.0
+            ],
+            [
+              830.0,
+              700.0
+            ],
+            [
+              668.0,
+              700.0
+            ],
+            [
+              668.0,
+              555.0
+            ],
+            [
+              830.0,
+              555.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-505a",
+        "code": "505a",
+        "name": "Kelas",
+        "area_m2": 104.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              700.0
+            ],
+            [
+              830.0,
+              845.0
+            ],
+            [
+              668.0,
+              845.0
+            ],
+            [
+              668.0,
+              700.0
+            ],
+            [
+              830.0,
+              700.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-504",
+        "code": "504",
+        "name": "Kelas",
+        "area_m2": 158.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              830.0,
+              845.0
+            ],
+            [
+              830.0,
+              1065.0
+            ],
+            [
+              668.0,
+              1065.0
+            ],
+            [
+              668.0,
+              845.0
+            ],
+            [
+              830.0,
+              845.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-501",
+        "code": "501",
+        "name": "Academic Support",
+        "area_m2": 35.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              980.0,
+              385.0
+            ],
+            [
+              980.0,
+              470.0
+            ],
+            [
+              885.0,
+              470.0
+            ],
+            [
+              885.0,
+              385.0
+            ],
+            [
+              980.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-502A",
+        "code": "502A",
+        "name": "HOD IMT",
+        "area_m2": 14.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              952.0,
+              483.0
+            ],
+            [
+              952.0,
+              530.0
+            ],
+            [
+              885.0,
+              530.0
+            ],
+            [
+              885.0,
+              483.0
+            ],
+            [
+              952.0,
+              483.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-502B",
+        "code": "502B",
+        "name": "Dean FTI",
+        "area_m2": 14.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              952.0,
+              530.0
+            ],
+            [
+              952.0,
+              578.0
+            ],
+            [
+              885.0,
+              578.0
+            ],
+            [
+              885.0,
+              530.0
+            ],
+            [
+              952.0,
+              530.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-502C",
+        "code": "502C",
+        "name": "HOD ISB",
+        "area_m2": 14.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              952.0,
+              578.0
+            ],
+            [
+              952.0,
+              628.0
+            ],
+            [
+              885.0,
+              628.0
+            ],
+            [
+              885.0,
+              578.0
+            ],
+            [
+              952.0,
+              578.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-503",
+        "code": "503",
+        "name": "R. Dosen FTI",
+        "area_m2": 165.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              980.0,
+              628.0
+            ],
+            [
+              980.0,
+              1020.0
+            ],
+            [
+              885.0,
+              1020.0
+            ],
+            [
+              885.0,
+              628.0
+            ],
+            [
+              980.0,
+              628.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-513",
+        "code": "513",
+        "name": "Lounge",
+        "area_m2": 55.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1105.0,
+              385.0
+            ],
+            [
+              1105.0,
+              485.0
+            ],
+            [
+              980.0,
+              485.0
+            ],
+            [
+              980.0,
+              385.0
+            ],
+            [
+              1105.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-512",
+        "code": "512",
+        "name": "Rg. Meeting",
+        "area_m2": 40.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1197.0,
+              385.0
+            ],
+            [
+              1197.0,
+              485.0
+            ],
+            [
+              1105.0,
+              485.0
+            ],
+            [
+              1105.0,
+              385.0
+            ],
+            [
+              1197.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-511",
+        "code": "511",
+        "name": "Rg. Meeting",
+        "area_m2": 28.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1260.0,
+              385.0
+            ],
+            [
+              1260.0,
+              485.0
+            ],
+            [
+              1197.0,
+              485.0
+            ],
+            [
+              1197.0,
+              385.0
+            ],
+            [
+              1260.0,
+              385.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "room",
+        "id": "LT_5-510",
+        "code": "510",
+        "name": "Lounge",
+        "area_m2": 191.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1568.0,
+              360.0
+            ],
+            [
+              1568.0,
+              500.0
+            ],
+            [
+              1260.0,
+              500.0
+            ],
+            [
+              1260.0,
+              360.0
+            ],
+            [
+              1568.0,
+              360.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "corridor",
+        "id": "LT_5-corridor-1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.0,
+            362.0
+          ],
+          [
+            1540.0,
+            362.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "corridor",
+        "id": "LT_5-corridor-2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            858.0,
+            362.0
+          ],
+          [
+            858.0,
+            1040.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "APAR",
+        "id": "LT_5-APAR-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          636.0,
+          345.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "APAR",
+        "id": "LT_5-APAR-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1515.0,
+          345.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "APAR",
+        "id": "LT_5-APAR-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.1,
+          355.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "APAR",
+        "id": "LT_5-APAR-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          875.7,
+          994.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "Hydrant",
+        "id": "LT_5-Hydrant-01",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          783.1,
+          344.6
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "Hydrant",
+        "id": "LT_5-Hydrant-02",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.0,
+          346.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "Hydrant",
+        "id": "LT_5-Hydrant-03",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1550.1,
+          382.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "floor": "LT_5",
+        "type": "Hydrant",
+        "id": "LT_5-Hydrant-04",
+        "inside_building": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          879.7,
+          1004.2
+        ]
+      }
+    }
+  ]
+}
