@@ -196,3 +196,132 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
     ax.legend(loc="lower right", framealpha=0.9, fontsize=8)
     fig.tight_layout()
     return fig
+
+# ==========================================
+# STREAMLIT UI
+# ==========================================
+st.set_page_config(page_title="APAR-UC GIS Finder", layout="wide", page_icon="🧯")
+
+st.title("🧯 APAR-UC: GIS Pencarian APAR & Analisis Jangkauan")
+st.caption("Main Building Universitas Ciputra (Lantai 1 - 7) • Berbasis Geometri Shapely & NetworkX")
+
+col_fl, col_md = st.columns([1, 2])
+with col_fl:
+    floor = st.selectbox("🏢 Pilih Lantai", FLOORS, index=0)
+
+data = load_floor(floor)
+corridor_union = unary_union(data["corridors"]) if data["corridors"] else LineString()
+corridor_graph = build_corridor_graph(data["corridors"])
+
+with col_md:
+    mode = st.radio(
+        "🛠️ Pilih Mode Operasi GIS",
+        ["Pencarian APAR Terdekat (Real Walking Distance)", "Analisis Jangkauan Proteksi APAR (Buffer 15m)"],
+        horizontal=True
+    )
+
+st.divider()
+
+if mode == "Pencarian APAR Terdekat (Real Walking Distance)":
+    room_options = {f"{r['code']} - {r['name']}": r for r in data["rooms"]}
+    
+    col_input, col_info = st.columns([1, 2])
+    with col_input:
+        selected_key = st.selectbox("🚪 Pilih Ruangan Sumber Kebakaran", list(room_options.keys()))
+        selected_room = room_options[selected_key]
+        room_centroid = selected_room["geom"].centroid
+        
+        # Hitung jarak ke seluruh APAR
+        results = []
+        for apar in data["apar"]:
+            apar_pt = apar["geom"]
+            # 1. Euclidean distance (garis lurus)
+            euc_px = room_centroid.distance(apar_pt)
+            euc_m = euc_px / PX_PER_M
+            
+            # 2. Real walking distance (jalur koridor)
+            route, walk_px = compute_corridor_route(corridor_graph, corridor_union, room_centroid, apar_pt)
+            walk_m = walk_px / PX_PER_M
+            
+            results.append({
+                "id": apar["id"],
+                "apar_pt": apar_pt,
+                "euc_m": round(euc_m, 2),
+                "walk_m": round(walk_m, 2),
+                "route": route
+            })
+            
+        # Urutkan berdasarkan jarak koridor nyata terdekat
+        results.sort(key=lambda x: x["walk_m"])
+        nearest = results[0] if results else None
+
+    with col_info:
+        if nearest:
+            m1, m2, m3 = st.columns(3)
+            m1.metric("📍 APAR Terdekat", nearest["id"])
+            m2.metric("🚶 Real Walking Distance", f"{nearest['walk_m']} m")
+            m3.metric("📏 Euclidean Distance", f"{nearest['euc_m']} m")
+
+    # Render peta
+    route_coords = nearest["route"] if nearest else None
+    fig = render_map(data, selected_room=selected_room, route_coords=route_coords)
+    st.pyplot(fig)
+
+    # Tabel Top 3 APAR Terdekat sesuai dokumen laporan
+    if results:
+        st.subheader("📋 Daftar APAR Terdekat dari " + selected_room["code"])
+        df_apar = pd.DataFrame([{
+            "Peringkat": f"#{idx+1}",
+            "ID APAR": r["id"],
+            "Walking Distance (Koridor)": f"{r['walk_m']} meter",
+            "Euclidean Distance (Lurus)": f"{r['euc_m']} meter",
+            "Selisih Jarak Nyata vs Lurus": f"{round(r['walk_m'] - r['euc_m'], 2)} meter"
+        } for idx, r in enumerate(results[:3])])
+        st.table(df_apar)
+
+else:
+    # Mode Analisis Jangkauan Proteksi APAR (Buffer 15m)
+    radius_m = 15.0
+    radius_px = radius_m * PX_PER_M  # 225 px
+    
+    # Buat buffer lingkaran 15 meter untuk tiap APAR
+    buffers = [a["geom"].buffer(radius_px) for a in data["apar"]]
+    buffer_union = unary_union(buffers) if buffers else None
+    
+    # Periksa ruangan mana saja yang tercover (intersects)
+    covered_rooms = set()
+    uncovered_rooms = []
+    
+    for r in data["rooms"]:
+        if buffer_union and r["geom"].intersects(buffer_union):
+            covered_rooms.add(r["code"])
+        else:
+            uncovered_rooms.append(r)
+            
+    total_rooms = len(data["rooms"])
+    n_covered = len(covered_rooms)
+    n_uncovered = len(uncovered_rooms)
+    pct = round((n_covered / total_rooms * 100), 1) if total_rooms > 0 else 0
+    
+    # Ringkasan KPI
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Total Ruangan", total_rooms)
+    c2.metric("✅ Terjangkau APAR (15m)", f"{n_covered} ({pct}%)")
+    c3.metric("❌ Belum Terjangkau (Blind Spot)", n_uncovered)
+    c4.metric("Jumlah Unit APAR", len(data["apar"]))
+
+    # Render peta jangkauan
+    fig = render_map(data, buffer_union=buffer_union, covered_rooms=covered_rooms)
+    st.pyplot(fig)
+
+    if uncovered_rooms:
+        st.warning(f"⚠️ Ditemukan **{n_uncovered} ruangan** yang berada di luar radius proteksi 15m APAR (Permenakertrans No. 04/1980):")
+        df_uncovered = pd.DataFrame([{
+            "Kode Ruangan": r["code"],
+            "Nama Ruangan": r["name"],
+            "Luas (m²)": r["area_m2"],
+            "Status": "Belum Terjangkau (Perlu Rekomendasi Unit APAR)"
+        } for r in uncovered_rooms])
+        st.dataframe(df_uncovered, use_container_width=True)
+    else:
+        st.success("🎉 Seluruh ruangan di lantai ini telah terlindungi secara penuh dalam radius 15 meter!")
