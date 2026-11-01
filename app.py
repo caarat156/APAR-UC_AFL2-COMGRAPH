@@ -125,3 +125,74 @@ def compute_corridor_route(graph, corridor_union, pt_start, pt_end):
     except (nx.NetworkXNoPath, nx.NodeNotFound):
         line = LineString([pt_start, pt_end])
         return [pt_start, pt_end], line.length
+
+
+def plot_polygon(ax, geom, **kwargs):
+    for poly in getattr(geom, "geoms", [geom]):
+        x, y = poly.exterior.xy
+        ax.fill(x, y, **kwargs)
+
+
+def render_map(data, selected_room=None, route_coords=None, buffer_union=None, covered_rooms=None):
+    fig, ax = plt.subplots(figsize=(14, 9))
+
+    # 1. Gambar Batas Gedung (Footprint)
+    if data["footprint"]:
+        plot_polygon(ax, data["footprint"], facecolor="#f5f5f7", edgecolor="#222222", linewidth=2.5)
+
+    # 2. Gambar Koridor
+    for line in data["corridors"]:
+        lx, ly = line.xy
+        ax.plot(lx, ly, color="#d0d0d5", linewidth=3.5, linestyle="--", zorder=1)
+
+    # 3. Buffer Lingkaran 15 Meter (Analisis Jangkauan)
+    if buffer_union is not None and not buffer_union.is_empty:
+        plot_polygon(ax, buffer_union, facecolor="#00bcd4", alpha=0.22, edgecolor="#0097a7", linewidth=1.5, zorder=2)
+
+    # 4. Gambar Ruangan
+    for r in data["rooms"]:
+        code = r["code"]
+        geom = r["geom"]
+        
+        # Pewarnaan sesuai mode
+        if covered_rooms is not None:
+            # Mode Jangkauan APAR: Hijau (terjangkau) vs Merah (belum terjangkau)
+            if code in covered_rooms:
+                fc, ec = "#c8e6c9", "#2e7d32"  # Hijau
+            else:
+                fc, ec = "#ffcdd2", "#c62828"  # Merah
+        elif selected_room and code == selected_room["code"]:
+            fc, ec = "#ffb74d", "#e65100"  # Oranye (Ruangan Dipilih)
+        else:
+            fc, ec = "#fff3e0", "#ffb300"  # Kuning Muda default
+
+        plot_polygon(ax, geom, facecolor=fc, edgecolor=ec, linewidth=1.2, zorder=3)
+        c = geom.representative_point()
+        ax.text(c.x, c.y, code, ha="center", va="center", fontsize=6, fontweight="bold", color="#333333", zorder=4)
+
+    # 5. Gambar Rute Jalan Koridor (Walking Path)
+    if route_coords and len(route_coords) >= 2:
+        rx = [p[0] for p in route_coords]
+        ry = [p[1] for p in route_coords]
+        # Garis rute utama
+        ax.plot(rx, ry, color="#d50000", linewidth=3.0, linestyle="-", zorder=6, label="Jalur Koridor ke APAR")
+        # Titik start (Centroid Ruangan)
+        ax.scatter([rx[0]], [ry[0]], c="#e65100", s=90, edgecolors="white", linewidth=1.5, zorder=7, label="Centroid Ruangan")
+
+    # 6. Titik APAR dan Hydrant
+    apar_x = [a["geom"].x for a in data["apar"]]
+    apar_y = [a["geom"].y for a in data["apar"]]
+    if apar_x:
+        ax.scatter(apar_x, apar_y, c="#e53935", s=70, edgecolors="white", linewidth=1.2, zorder=8, label="APAR")
+
+    hydrant_x = [h["geom"].x for h in data["hydrant"]]
+    hydrant_y = [h["geom"].y for h in data["hydrant"]]
+    if hydrant_x:
+        ax.scatter(hydrant_x, hydrant_y, c="#1e88e5", s=70, edgecolors="white", linewidth=1.2, zorder=8, label="Hydrant")
+
+    ax.set_aspect("equal")
+    ax.invert_yaxis()  # Sumbu Y piksel mengarah ke bawah
+    ax.axis("off")
+    ax.legend(loc="lower right", framealpha=0.9, fontsize=8)
+    fig.tight_layout()
+    return fig
