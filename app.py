@@ -92,7 +92,7 @@ def compute_corridor_route(graph, corridor_union, pt_start, pt_end):
     if corridor_union.is_empty or graph.number_of_nodes() == 0:
         # Fallback garis lurus jika tidak ada koridor
         line = LineString([pt_start, pt_end])
-        return [pt_start, pt_end], line.length
+        return [(pt_start.x, pt_start.y), (pt_end.x, pt_end.y)], line.length
 
     # 1. Proyeksi titik ke koridor
     proj_start = nearest_points(corridor_union, pt_start)[0]
@@ -124,7 +124,7 @@ def compute_corridor_route(graph, corridor_union, pt_start, pt_end):
         return full_coords, total_px
     except (nx.NetworkXNoPath, nx.NodeNotFound):
         line = LineString([pt_start, pt_end])
-        return [pt_start, pt_end], line.length
+        return [(pt_start.x, pt_start.y), (pt_end.x, pt_end.y)], line.length
 
 
 def plot_polygon(ax, geom, **kwargs):
@@ -172,8 +172,8 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
 
     # 5. Gambar Rute Jalan Koridor (Walking Path)
     if route_coords and len(route_coords) >= 2:
-        rx = [p[0] for p in route_coords]
-        ry = [p[1] for p in route_coords]
+        rx = [p.x if hasattr(p, "x") else p[0] for p in route_coords]
+        ry = [p.y if hasattr(p, "y") else p[1] for p in route_coords]
         # Garis rute utama
         ax.plot(rx, ry, color="#d50000", linewidth=3.0, linestyle="-", zorder=6, label="Jalur Koridor ke APAR")
         # Titik start (Centroid Ruangan)
@@ -193,7 +193,9 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
     ax.set_aspect("equal")
     ax.invert_yaxis()  # Sumbu Y piksel mengarah ke bawah
     ax.axis("off")
-    ax.legend(loc="lower right", framealpha=0.9, fontsize=8)
+    handles, labels = ax.get_legend_handles_labels()
+    if handles:
+        ax.legend(handles, labels, loc="lower right", framealpha=0.9, fontsize=8)
     fig.tight_layout()
     return fig
 
@@ -224,60 +226,64 @@ st.divider()
 
 if mode == "Pencarian APAR Terdekat (Real Walking Distance)":
     room_options = {f"{r['code']} - {r['name']}": r for r in data["rooms"]}
-    
-    col_input, col_info = st.columns([1, 2])
-    with col_input:
-        selected_key = st.selectbox("🚪 Pilih Ruangan Sumber Kebakaran", list(room_options.keys()))
-        selected_room = room_options[selected_key]
-        room_centroid = selected_room["geom"].centroid
-        
-        # Hitung jarak ke seluruh APAR
-        results = []
-        for apar in data["apar"]:
-            apar_pt = apar["geom"]
-            # 1. Euclidean distance (garis lurus)
-            euc_px = room_centroid.distance(apar_pt)
-            euc_m = euc_px / PX_PER_M
+    if not room_options:
+        st.warning("⚠️ Tidak ditemukan data ruangan untuk lantai ini.")
+    elif not data["apar"]:
+        st.warning("⚠️ Tidak ditemukan data titik APAR untuk lantai ini.")
+    else:
+        col_input, col_info = st.columns([1, 2])
+        with col_input:
+            selected_key = st.selectbox("🚪 Pilih Ruangan Sumber Kebakaran", list(room_options.keys()))
+            selected_room = room_options[selected_key]
+            room_centroid = selected_room["geom"].centroid
             
-            # 2. Real walking distance (jalur koridor)
-            route, walk_px = compute_corridor_route(corridor_graph, corridor_union, room_centroid, apar_pt)
-            walk_m = walk_px / PX_PER_M
-            
-            results.append({
-                "id": apar["id"],
-                "apar_pt": apar_pt,
-                "euc_m": round(euc_m, 2),
-                "walk_m": round(walk_m, 2),
-                "route": route
-            })
-            
-        # Urutkan berdasarkan jarak koridor nyata terdekat
-        results.sort(key=lambda x: x["walk_m"])
-        nearest = results[0] if results else None
+            # Hitung jarak ke seluruh APAR
+            results = []
+            for apar in data["apar"]:
+                apar_pt = apar["geom"]
+                # 1. Euclidean distance (garis lurus)
+                euc_px = room_centroid.distance(apar_pt)
+                euc_m = euc_px / PX_PER_M
+                
+                # 2. Real walking distance (jalur koridor)
+                route, walk_px = compute_corridor_route(corridor_graph, corridor_union, room_centroid, apar_pt)
+                walk_m = walk_px / PX_PER_M
+                
+                results.append({
+                    "id": apar["id"],
+                    "apar_pt": apar_pt,
+                    "euc_m": round(euc_m, 2),
+                    "walk_m": round(walk_m, 2),
+                    "route": route
+                })
+                
+            # Urutkan berdasarkan jarak koridor nyata terdekat
+            results.sort(key=lambda x: x["walk_m"])
+            nearest = results[0] if results else None
 
-    with col_info:
-        if nearest:
-            m1, m2, m3 = st.columns(3)
-            m1.metric("📍 APAR Terdekat", nearest["id"])
-            m2.metric("🚶 Real Walking Distance", f"{nearest['walk_m']} m")
-            m3.metric("📏 Euclidean Distance", f"{nearest['euc_m']} m")
+        with col_info:
+            if nearest:
+                m1, m2, m3 = st.columns(3)
+                m1.metric("📍 APAR Terdekat", nearest["id"])
+                m2.metric("🚶 Real Walking Distance", f"{nearest['walk_m']} m")
+                m3.metric("📏 Euclidean Distance", f"{nearest['euc_m']} m")
 
-    # Render peta
-    route_coords = nearest["route"] if nearest else None
-    fig = render_map(data, selected_room=selected_room, route_coords=route_coords)
-    st.pyplot(fig)
+        # Render peta
+        route_coords = nearest["route"] if nearest else None
+        fig = render_map(data, selected_room=selected_room, route_coords=route_coords)
+        st.pyplot(fig)
 
-    # Tabel Top 3 APAR Terdekat sesuai dokumen laporan
-    if results:
-        st.subheader("📋 Daftar APAR Terdekat dari " + selected_room["code"])
-        df_apar = pd.DataFrame([{
-            "Peringkat": f"#{idx+1}",
-            "ID APAR": r["id"],
-            "Walking Distance (Koridor)": f"{r['walk_m']} meter",
-            "Euclidean Distance (Lurus)": f"{r['euc_m']} meter",
-            "Selisih Jarak Nyata vs Lurus": f"{round(r['walk_m'] - r['euc_m'], 2)} meter"
-        } for idx, r in enumerate(results[:3])])
-        st.table(df_apar)
+        # Tabel Top 3 APAR Terdekat sesuai dokumen laporan
+        if results:
+            st.subheader("📋 Daftar APAR Terdekat dari " + selected_room["code"])
+            df_apar = pd.DataFrame([{
+                "Peringkat": f"#{idx+1}",
+                "ID APAR": r["id"],
+                "Walking Distance (Koridor)": f"{r['walk_m']} meter",
+                "Euclidean Distance (Lurus)": f"{r['euc_m']} meter",
+                "Selisih Jarak Nyata vs Lurus": f"{round(r['walk_m'] - r['euc_m'], 2)} meter"
+            } for idx, r in enumerate(results[:3])])
+            st.table(df_apar)
 
 else:
     # Mode Analisis Jangkauan Proteksi APAR (Buffer 15m)
