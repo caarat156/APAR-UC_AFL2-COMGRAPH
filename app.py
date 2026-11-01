@@ -332,7 +332,7 @@ with st.sidebar:
     c_info1.metric("Ruangan", len(data["rooms"]))
     c_info2.metric("APAR", len(data["apar"]))
     
-    st.caption("Skala Peta: **15 px = 1 meter** | Standar: **Permenakertrans No. 04/1980**")
+    st.caption("Skala Peta: **15 px = 1 meter** ")
 
 
 # ==========================================
@@ -343,15 +343,6 @@ st.markdown(f"""
 <div class="hero-banner">
     <div class="hero-title">
         APAR-UC: GIS Finder & Emergency Routing
-    </div>
-    <div class="hero-subtitle">
-        Sistem Informasi Geografis Penentuan Rute Terdekat ke Titik APAR dan Analisis Jangkauan Proteksi Gedung Utama Universitas Ciputra
-    </div>
-    <div class="hero-badges">
-        <span class="hero-badge">{floor}</span>
-        <span class="hero-badge">{len(data['apar'])} Unit APAR</span>
-        <span class="hero-badge">{len(data['rooms'])} Ruangan Terdaftar</span>
-        <span class="hero-badge">Algoritma Dijkstra</span>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -411,12 +402,10 @@ if mode == "Pencarian APAR Terdekat (Real Walking)":
                 <div class="kpi-card red">
                     <div class="kpi-header">APAR Terdekat</div>
                     <div class="kpi-value">{nearest['id']}</div>
-                    <div class="kpi-sub">Unit Proteksi Prioritas 1</div>
                 </div>
                 <div class="kpi-card orange">
                     <div class="kpi-header">Real Walking Distance</div>
                     <div class="kpi-value">{nearest['walk_m']} m</div>
-                    <div class="kpi-sub">Estimasi Tempuh: {nearest['est_time']}</div>
                 </div>
               
             </div>
