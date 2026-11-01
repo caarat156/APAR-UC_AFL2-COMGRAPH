@@ -269,7 +269,7 @@ if "current_room_code" not in st.session_state:
     st.session_state["current_room_code"] = None
 
 all_rooms_index = get_all_rooms_index()
-search_labels = ["-- Pilih Ruangan dari Seluruh Lantai --"] + [item["label"] for item in all_rooms_index]
+search_labels = ["-- Cari Ruangan --"] + [item["label"] for item in all_rooms_index]
 
 
 # ==========================================
@@ -421,10 +421,8 @@ if mode == "Pencarian APAR Terdekat (Real Walking)":
 
         # Render Peta
         route_coords = nearest["route"] if nearest else None
-        st.markdown('<div class="map-frame">', unsafe_allow_html=True)
         fig = render_map(data, selected_room=selected_room, route_coords=route_coords)
         st.pyplot(fig, use_container_width=True)
-        st.markdown('</div>', unsafe_allow_html=True)
 
         # Tabel Top 3 APAR Terdekat
         if results:
@@ -486,10 +484,8 @@ else:
     """, unsafe_allow_html=True)
 
     # Render Peta Jangkauan
-    st.markdown('<div class="map-frame">', unsafe_allow_html=True)
     fig = render_map(data, buffer_union=buffer_union, covered_rooms=covered_rooms)
     st.pyplot(fig, use_container_width=True)
-    st.markdown('</div>', unsafe_allow_html=True)
 
     if uncovered_rooms:
         st.markdown(f"##### Daftar Ruangan Blind Spot di {floor} (Di luar radius 15m Permenakertrans No. 04/1980):")
