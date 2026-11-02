@@ -68,8 +68,7 @@
         "type": "room",
         "id": "LT_7-713",
         "code": "713",
-        "name": "Theater",
-        "area_m2": 291.6
+        "name": "Theater"
       },
       "geometry": {
         "type": "Polygon",
@@ -106,8 +105,7 @@
         "type": "room",
         "id": "LT_7-712",
         "code": "712",
-        "name": "Kelas",
-        "area_m2": 95.1
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -144,8 +142,7 @@
         "type": "room",
         "id": "LT_7-714A",
         "code": "714A",
-        "name": "R. Tutor 1",
-        "area_m2": 22.4
+        "name": "R. Tutor 1"
       },
       "geometry": {
         "type": "Polygon",
@@ -182,8 +179,7 @@
         "type": "room",
         "id": "LT_7-714B",
         "code": "714B",
-        "name": "R. Tutor 2",
-        "area_m2": 22.0
+        "name": "R. Tutor 2"
       },
       "geometry": {
         "type": "Polygon",
@@ -220,8 +216,7 @@
         "type": "room",
         "id": "LT_7-714C",
         "code": "714C",
-        "name": "R. Tutor 3",
-        "area_m2": 22.4
+        "name": "R. Tutor 3"
       },
       "geometry": {
         "type": "Polygon",
@@ -258,8 +253,7 @@
         "type": "room",
         "id": "LT_7-714D",
         "code": "714D",
-        "name": "R. Tutor 4",
-        "area_m2": 21.6
+        "name": "R. Tutor 4"
       },
       "geometry": {
         "type": "Polygon",
@@ -296,8 +290,7 @@
         "type": "room",
         "id": "LT_7-714E",
         "code": "714E",
-        "name": "R. Tutor 5",
-        "area_m2": 21.6
+        "name": "R. Tutor 5"
       },
       "geometry": {
         "type": "Polygon",
@@ -334,8 +327,7 @@
         "type": "room",
         "id": "LT_7-714F",
         "code": "714F",
-        "name": "R. Tutor 6",
-        "area_m2": 21.6
+        "name": "R. Tutor 6"
       },
       "geometry": {
         "type": "Polygon",
@@ -372,8 +364,7 @@
         "type": "room",
         "id": "LT_7-714G",
         "code": "714G",
-        "name": "R. Tutor 7",
-        "area_m2": 21.6
+        "name": "R. Tutor 7"
       },
       "geometry": {
         "type": "Polygon",
@@ -410,8 +401,7 @@
         "type": "room",
         "id": "LT_7-714H",
         "code": "714H",
-        "name": "R. Tutor 8",
-        "area_m2": 21.6
+        "name": "R. Tutor 8"
       },
       "geometry": {
         "type": "Polygon",
@@ -448,8 +438,7 @@
         "type": "room",
         "id": "LT_7-714i",
         "code": "714i",
-        "name": "R. Tutor 9",
-        "area_m2": 21.6
+        "name": "R. Tutor 9"
       },
       "geometry": {
         "type": "Polygon",
@@ -486,8 +475,7 @@
         "type": "room",
         "id": "LT_7-714J",
         "code": "714J",
-        "name": "R. Tutor 10",
-        "area_m2": 21.6
+        "name": "R. Tutor 10"
       },
       "geometry": {
         "type": "Polygon",
@@ -524,8 +512,7 @@
         "type": "room",
         "id": "LT_7-714K",
         "code": "714K",
-        "name": "R. Tutor 11",
-        "area_m2": 20.3
+        "name": "R. Tutor 11"
       },
       "geometry": {
         "type": "Polygon",
@@ -562,8 +549,7 @@
         "type": "room",
         "id": "LT_7-714L",
         "code": "714L",
-        "name": "R. Tutor 12",
-        "area_m2": 19.0
+        "name": "R. Tutor 12"
       },
       "geometry": {
         "type": "Polygon",
@@ -600,8 +586,7 @@
         "type": "room",
         "id": "LT_7-PREF",
         "code": "PREF",
-        "name": "Prefunction",
-        "area_m2": 259.5
+        "name": "Prefunction"
       },
       "geometry": {
         "type": "Polygon",
@@ -638,8 +623,7 @@
         "type": "room",
         "id": "LT_7-707",
         "code": "707",
-        "name": "Storage",
-        "area_m2": 102.0
+        "name": "Storage"
       },
       "geometry": {
         "type": "Polygon",
@@ -676,8 +660,7 @@
         "type": "room",
         "id": "LT_7-708",
         "code": "708",
-        "name": "Storage",
-        "area_m2": 28.3
+        "name": "Storage"
       },
       "geometry": {
         "type": "Polygon",
@@ -714,8 +697,7 @@
         "type": "room",
         "id": "LT_7-709",
         "code": "709",
-        "name": "Storage",
-        "area_m2": 28.3
+        "name": "Storage"
       },
       "geometry": {
         "type": "Polygon",
@@ -752,8 +734,7 @@
         "type": "room",
         "id": "LT_7-710",
         "code": "710",
-        "name": "Storage Auditorium",
-        "area_m2": 34.7
+        "name": "Storage Auditorium"
       },
       "geometry": {
         "type": "Polygon",
@@ -790,8 +771,7 @@
         "type": "room",
         "id": "LT_7-711",
         "code": "711",
-        "name": "Auditorium (Kapasitas 500)",
-        "area_m2": 352.4
+        "name": "Auditorium (Kapasitas 500)"
       },
       "geometry": {
         "type": "Polygon",
@@ -828,8 +808,7 @@
         "type": "room",
         "id": "LT_7-701A",
         "code": "701A",
-        "name": "R. Tutor 13",
-        "area_m2": 18.2
+        "name": "R. Tutor 13"
       },
       "geometry": {
         "type": "Polygon",
@@ -866,8 +845,7 @@
         "type": "room",
         "id": "LT_7-701B",
         "code": "701B",
-        "name": "R. Tutor 14",
-        "area_m2": 19.3
+        "name": "R. Tutor 14"
       },
       "geometry": {
         "type": "Polygon",
@@ -904,8 +882,7 @@
         "type": "room",
         "id": "LT_7-701C",
         "code": "701C",
-        "name": "R. Tutor 15",
-        "area_m2": 19.3
+        "name": "R. Tutor 15"
       },
       "geometry": {
         "type": "Polygon",
@@ -942,8 +919,7 @@
         "type": "room",
         "id": "LT_7-702",
         "code": "702",
-        "name": "Gudang Alat FK",
-        "area_m2": 58.0
+        "name": "Gudang Alat FK"
       },
       "geometry": {
         "type": "Polygon",
@@ -980,8 +956,7 @@
         "type": "room",
         "id": "LT_7-705-706",
         "code": "705-706",
-        "name": "Ruang VR",
-        "area_m2": 210.7
+        "name": "Ruang VR"
       },
       "geometry": {
         "type": "Polygon",
@@ -1018,8 +993,7 @@
         "type": "room",
         "id": "LT_7-703-704",
         "code": "703-704",
-        "name": "Theater 2 (On Progress)",
-        "area_m2": 410.7
+        "name": "Theater 2 (On Progress)"
       },
       "geometry": {
         "type": "Polygon",
@@ -1054,8 +1028,7 @@
       "properties": {
         "floor": "LT_7",
         "type": "APAR",
-        "id": "LT_7-APAR-01",
-        "inside_building": true
+        "id": "LT_7-APAR-01"
       },
       "geometry": {
         "type": "Point",
@@ -1070,8 +1043,7 @@
       "properties": {
         "floor": "LT_7",
         "type": "APAR",
-        "id": "LT_7-APAR-02",
-        "inside_building": true
+        "id": "LT_7-APAR-02"
       },
       "geometry": {
         "type": "Point",
@@ -1086,8 +1058,7 @@
       "properties": {
         "floor": "LT_7",
         "type": "APAR",
-        "id": "LT_7-APAR-03",
-        "inside_building": true
+        "id": "LT_7-APAR-03"
       },
       "geometry": {
         "type": "Point",
@@ -1102,8 +1073,7 @@
       "properties": {
         "floor": "LT_7",
         "type": "APAR",
-        "id": "LT_7-APAR-04",
-        "inside_building": true
+        "id": "LT_7-APAR-04"
       },
       "geometry": {
         "type": "Point",

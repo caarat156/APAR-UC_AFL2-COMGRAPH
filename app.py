@@ -10,7 +10,6 @@ from routing import FloorNav, natural_key, load_floor_file
 DATA_DIR = Path(__file__).resolve().parent / "data"
 FLOORS = ["LT_1", "LT_2", "LT_2A", "LT_3", "LT_4", "LT_5", "LT_6", "LT_7"]
 PX_PER_M = 15.0         # Skala: 15 piksel = 1 meter
-WALK_SPEED_MPS = 1.2    # Kecepatan jalan rata-rata evakuasi (1.2 m/s)
 
 
 # ==========================================
@@ -56,17 +55,28 @@ st.markdown("""
 # ==========================================
 @st.cache_data
 def load_floor(floor):
+    """
+    Fungsi: Memuat data GeoJSON lantai dari disk dan menyimpannya di memori RAM (cache).
+    Tujuan: Menghindari pembacaan file berulang kali agar aplikasi berjalan sangat cepat.
+    """
     return load_floor_file(DATA_DIR / f"{floor}.geojson")
 
 
 @st.cache_resource
 def get_floor_nav(floor):
+    """
+    Fungsi: Menginisialisasi dan mencache objek Graf Navigasi FloorNav untuk lantai tertentu.
+    Tujuan: Graf NetworkX hanya dibangun sekali per lantai, menghemat waktu pemrosesan.
+    """
     return FloorNav(load_floor(floor))
 
 
 @st.cache_data
 def get_all_rooms_index():
-    """Mengindeks seluruh ruangan di semua lantai untuk fitur search global."""
+    """
+    Fungsi: Mengindeks seluruh ruangan di semua lantai (LT_1 s/d LT_7).
+    Tujuan: Menyediakan data untuk fitur kotak pencarian global di sidebar.
+    """
     rooms = [
         {"code": r["code"], "name": r["name"], "floor": f, "label": f"[{f}] {r['code']} - {r['name']}"}
         for f in FLOORS for r in load_floor(f)["rooms"]
@@ -75,14 +85,29 @@ def get_all_rooms_index():
 
 
 # ==========================================
-# MAP VISUALIZATION
+# MAP VISUALIZATION (MATPLOTLIB GIS)
 # ==========================================
 def plot_polygon(ax, geom, **kwargs):
+    """
+    Fungsi Helper: Menggambar poligon Shapely ke canvas Matplotlib (ax.fill).
+    Mendukung Polygon tunggal maupun MultiPolygon secara otomatis.
+    """
     for poly in getattr(geom, "geoms", [geom]):
         ax.fill(*poly.exterior.xy, **kwargs)
 
 
 def render_map(data, selected_room=None, route_coords=None, buffer_union=None, covered_rooms=None):
+    """
+    Fungsi Utama Visualisasi GIS:
+    Menggambar denah lengkap dengan urutan layer (zorder):
+      1. Footprint gedung (latar belakang abu-abu)
+      2. Garis koridor lorong (garis putus-putus hijau)
+      3. Buffer lingkaran proteksi 15m (biru transparan)
+      4. Poligon ruangan (kuning/oranye/hijau/merah)
+      5. Label nomor ruangan di titik tengah
+      6. Jalur rute evakuasi terpendek (garis tebal merah)
+      7. Titik marker APAR (lingkaran merah)
+    """
     fig, ax = plt.subplots(figsize=(15, 8.5), dpi=130)
     fig.patch.set_facecolor('#ffffff')
     ax.set_facecolor('#f8fafc')
@@ -160,6 +185,11 @@ with st.sidebar:
     st.markdown("### Kontrol & Navigasi")
 
     def on_search_select():
+        """
+        Callback Pencarian Global:
+        Dipanggil saat user memilih ruangan dari dropdown search global.
+        Otomatis menyinkronkan lantai aktif (floor_selector) dan ruangan aktif (current_room_code).
+        """
         val = st.session_state.get("global_search_box")
         if val and val != search_labels[0]:
             matched = next((item for item in all_rooms_index if item["label"] == val), None)
@@ -226,7 +256,6 @@ if mode == "Pencarian APAR Terdekat (Real Walking)":
                 "id": r["id"],
                 "apar_pt": r["apar_pt"],
                 "walk_m": round(r["walk_px"] / PX_PER_M, 2),
-                "est_time": f"{round((r['walk_px'] / PX_PER_M) / WALK_SPEED_MPS)} detik",
                 "route": r["route"]
             }
             for r in nav.route(selected_room["code"], data["apar"])
@@ -255,8 +284,7 @@ if mode == "Pencarian APAR Terdekat (Real Walking)":
             st.dataframe(pd.DataFrame([{
                 "Prioritas": f"Peringkat #{idx+1}",
                 "ID APAR": r["id"],
-                "Jarak Jalan Nyata (Koridor)": f"{r['walk_m']} meter",
-                "Estimasi Tempuh Jalan": r["est_time"]
+                "Jarak Jalan Nyata (Koridor)": f"{r['walk_m']} meter"
             } for idx, r in enumerate(results[:3])]), use_container_width=True, hide_index=True)
 
 else:
@@ -286,7 +314,6 @@ else:
         st.dataframe(pd.DataFrame([{
             "Kode Ruangan": r["code"],
             "Nama Ruangan": r["name"],
-            "Estimasi Luas": f"{r['area_m2']} m²",
             "Kebutuhan Mitigasi": "Rekomendasi Penambahan Unit APAR Baru"
         } for r in uncovered_rooms]), use_container_width=True, hide_index=True)
     else:

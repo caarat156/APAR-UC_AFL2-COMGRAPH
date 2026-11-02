@@ -68,8 +68,7 @@
         "type": "room",
         "id": "LT_4-421",
         "code": "421",
-        "name": "Lab. Sensori",
-        "area_m2": 59.8
+        "name": "Lab. Sensori"
       },
       "geometry": {
         "type": "Polygon",
@@ -106,8 +105,7 @@
         "type": "room",
         "id": "LT_4-420",
         "code": "420",
-        "name": "Lab. Penelitian",
-        "area_m2": 117.0
+        "name": "Lab. Penelitian"
       },
       "geometry": {
         "type": "Polygon",
@@ -144,8 +142,7 @@
         "type": "room",
         "id": "LT_4-418",
         "code": "418",
-        "name": "R. Steril & Autoclave",
-        "area_m2": 6.9
+        "name": "R. Steril & Autoclave"
       },
       "geometry": {
         "type": "Polygon",
@@ -182,8 +179,7 @@
         "type": "room",
         "id": "LT_4-419",
         "code": "419",
-        "name": "R. Laboran",
-        "area_m2": 11.6
+        "name": "R. Laboran"
       },
       "geometry": {
         "type": "Polygon",
@@ -220,8 +216,7 @@
         "type": "room",
         "id": "LT_4-419a",
         "code": "419a",
-        "name": "R. Penyimpanan",
-        "area_m2": 10.4
+        "name": "R. Penyimpanan"
       },
       "geometry": {
         "type": "Polygon",
@@ -258,8 +253,7 @@
         "type": "room",
         "id": "LT_4-417",
         "code": "417",
-        "name": "Lab. Penelitian",
-        "area_m2": 165.2
+        "name": "Lab. Penelitian"
       },
       "geometry": {
         "type": "Polygon",
@@ -296,8 +290,7 @@
         "type": "room",
         "id": "LT_4-408",
         "code": "408",
-        "name": "FA",
-        "area_m2": 98.6
+        "name": "FA"
       },
       "geometry": {
         "type": "Polygon",
@@ -334,8 +327,7 @@
         "type": "room",
         "id": "LT_4-409",
         "code": "409",
-        "name": "Pantry & Gudang FA/PM",
-        "area_m2": 90.4
+        "name": "Pantry & Gudang FA/PM"
       },
       "geometry": {
         "type": "Polygon",
@@ -372,8 +364,7 @@
         "type": "room",
         "id": "LT_4-410",
         "code": "410",
-        "name": "PM",
-        "area_m2": 103.4
+        "name": "PM"
       },
       "geometry": {
         "type": "Polygon",
@@ -410,8 +401,7 @@
         "type": "room",
         "id": "LT_4-411",
         "code": "411",
-        "name": "ICT",
-        "area_m2": 71.4
+        "name": "ICT"
       },
       "geometry": {
         "type": "Polygon",
@@ -448,8 +438,7 @@
         "type": "room",
         "id": "LT_4-422",
         "code": "422",
-        "name": "Kelas",
-        "area_m2": 87.9
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -486,8 +475,7 @@
         "type": "room",
         "id": "LT_4-423",
         "code": "423",
-        "name": "Kelas",
-        "area_m2": 76.7
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -524,8 +512,7 @@
         "type": "room",
         "id": "LT_4-424",
         "code": "424",
-        "name": "Storage Alat2 FTP",
-        "area_m2": 27.4
+        "name": "Storage Alat2 FTP"
       },
       "geometry": {
         "type": "Polygon",
@@ -562,8 +549,7 @@
         "type": "room",
         "id": "LT_4-425",
         "code": "425",
-        "name": "Rg. Dosen FTP",
-        "area_m2": 71.8
+        "name": "Rg. Dosen FTP"
       },
       "geometry": {
         "type": "Polygon",
@@ -600,8 +586,7 @@
         "type": "room",
         "id": "LT_4-425b",
         "code": "425b",
-        "name": "R. Kaprogdi FTP",
-        "area_m2": 8.8
+        "name": "R. Kaprogdi FTP"
       },
       "geometry": {
         "type": "Polygon",
@@ -638,8 +623,7 @@
         "type": "room",
         "id": "LT_4-425a",
         "code": "425a",
-        "name": "R. Dekan FTP",
-        "area_m2": 10.0
+        "name": "R. Dekan FTP"
       },
       "geometry": {
         "type": "Polygon",
@@ -676,8 +660,7 @@
         "type": "room",
         "id": "LT_4-407",
         "code": "407",
-        "name": "Academic Support FTO",
-        "area_m2": 31.7
+        "name": "Academic Support FTO"
       },
       "geometry": {
         "type": "Polygon",
@@ -714,8 +697,7 @@
         "type": "room",
         "id": "LT_4-406",
         "code": "406",
-        "name": "SEH - DLB",
-        "area_m2": 106.3
+        "name": "SEH - DLB"
       },
       "geometry": {
         "type": "Polygon",
@@ -752,8 +734,7 @@
         "type": "room",
         "id": "LT_4-405B",
         "code": "405B",
-        "name": "Kelas / LCC",
-        "area_m2": 106.3
+        "name": "Kelas / LCC"
       },
       "geometry": {
         "type": "Polygon",
@@ -790,8 +771,7 @@
         "type": "room",
         "id": "LT_4-404",
         "code": "404",
-        "name": "Lab. HTB",
-        "area_m2": 216.3
+        "name": "Lab. HTB"
       },
       "geometry": {
         "type": "Polygon",
@@ -828,8 +808,7 @@
         "type": "room",
         "id": "LT_4-401",
         "code": "401",
-        "name": "Academic Support CB / HTB",
-        "area_m2": 39.3
+        "name": "Academic Support CB / HTB"
       },
       "geometry": {
         "type": "Polygon",
@@ -866,8 +845,7 @@
         "type": "room",
         "id": "LT_4-402",
         "code": "402",
-        "name": "R. Dosen HTB",
-        "area_m2": 69.7
+        "name": "R. Dosen HTB"
       },
       "geometry": {
         "type": "Polygon",
@@ -904,8 +882,7 @@
         "type": "room",
         "id": "LT_4-403",
         "code": "403",
-        "name": "SEH",
-        "area_m2": 152.0
+        "name": "SEH"
       },
       "geometry": {
         "type": "Polygon",
@@ -942,8 +919,7 @@
         "type": "room",
         "id": "LT_4-416",
         "code": "416",
-        "name": "Kaprogdi",
-        "area_m2": 12.0
+        "name": "Kaprogdi"
       },
       "geometry": {
         "type": "Polygon",
@@ -980,8 +956,7 @@
         "type": "room",
         "id": "LT_4-415",
         "code": "415",
-        "name": "Kaprogdi",
-        "area_m2": 12.0
+        "name": "Kaprogdi"
       },
       "geometry": {
         "type": "Polygon",
@@ -1018,8 +993,7 @@
         "type": "room",
         "id": "LT_4-414",
         "code": "414",
-        "name": "Kaprogdi",
-        "area_m2": 12.0
+        "name": "Kaprogdi"
       },
       "geometry": {
         "type": "Polygon",
@@ -1056,8 +1030,7 @@
         "type": "room",
         "id": "LT_4-CBZ",
         "code": "CBZ",
-        "name": "R. Dosen CBZ",
-        "area_m2": 72.3
+        "name": "R. Dosen CBZ"
       },
       "geometry": {
         "type": "Polygon",
@@ -1094,8 +1067,7 @@
         "type": "room",
         "id": "LT_4-413",
         "code": "413",
-        "name": "413",
-        "area_m2": 62.8
+        "name": "413"
       },
       "geometry": {
         "type": "Polygon",
@@ -1132,8 +1104,7 @@
         "type": "room",
         "id": "LT_4-412",
         "code": "412",
-        "name": "ICT",
-        "area_m2": 75.3
+        "name": "ICT"
       },
       "geometry": {
         "type": "Polygon",
@@ -1168,8 +1139,7 @@
       "properties": {
         "floor": "LT_4",
         "type": "APAR",
-        "id": "LT_4-APAR-01",
-        "inside_building": true
+        "id": "LT_4-APAR-01"
       },
       "geometry": {
         "type": "Point",
@@ -1184,8 +1154,7 @@
       "properties": {
         "floor": "LT_4",
         "type": "APAR",
-        "id": "LT_4-APAR-02",
-        "inside_building": true
+        "id": "LT_4-APAR-02"
       },
       "geometry": {
         "type": "Point",
@@ -1200,8 +1169,7 @@
       "properties": {
         "floor": "LT_4",
         "type": "APAR",
-        "id": "LT_4-APAR-03",
-        "inside_building": true
+        "id": "LT_4-APAR-03"
       },
       "geometry": {
         "type": "Point",
@@ -1216,8 +1184,7 @@
       "properties": {
         "floor": "LT_4",
         "type": "APAR",
-        "id": "LT_4-APAR-04",
-        "inside_building": true
+        "id": "LT_4-APAR-04"
       },
       "geometry": {
         "type": "Point",

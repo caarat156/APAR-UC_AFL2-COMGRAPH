@@ -52,8 +52,7 @@
         "type": "room",
         "id": "LT_2-222",
         "code": "222",
-        "name": "Area Koleksi",
-        "area_m2": 238.8
+        "name": "Area Koleksi"
       },
       "geometry": {
         "type": "Polygon",
@@ -90,8 +89,7 @@
         "type": "room",
         "id": "LT_2-222a",
         "code": "222a",
-        "name": "R. Pengolahan",
-        "area_m2": 8.6
+        "name": "R. Pengolahan"
       },
       "geometry": {
         "type": "Polygon",
@@ -128,8 +126,7 @@
         "type": "room",
         "id": "LT_2-222b",
         "code": "222b",
-        "name": "R. Audio Visual",
-        "area_m2": 17.1
+        "name": "R. Audio Visual"
       },
       "geometry": {
         "type": "Polygon",
@@ -166,8 +163,7 @@
         "type": "room",
         "id": "LT_2-221",
         "code": "221",
-        "name": "Life Action Laboratory",
-        "area_m2": 105.3
+        "name": "Life Action Laboratory"
       },
       "geometry": {
         "type": "Polygon",
@@ -204,8 +200,7 @@
         "type": "room",
         "id": "LT_2-223",
         "code": "223",
-        "name": "Entrepreneurship Corner",
-        "area_m2": 85.9
+        "name": "Entrepreneurship Corner"
       },
       "geometry": {
         "type": "Polygon",
@@ -242,8 +237,7 @@
         "type": "room",
         "id": "LT_2-224",
         "code": "224",
-        "name": "224",
-        "area_m2": 24.0
+        "name": "224"
       },
       "geometry": {
         "type": "Polygon",
@@ -280,8 +274,7 @@
         "type": "room",
         "id": "LT_2-225a",
         "code": "225a",
-        "name": "Collaboration Room",
-        "area_m2": 16.0
+        "name": "Collaboration Room"
       },
       "geometry": {
         "type": "Polygon",
@@ -318,8 +311,7 @@
         "type": "room",
         "id": "LT_2-225",
         "code": "225",
-        "name": "Lounge Perpustakaan",
-        "area_m2": 148.0
+        "name": "Lounge Perpustakaan"
       },
       "geometry": {
         "type": "Polygon",
@@ -364,8 +356,7 @@
         "type": "room",
         "id": "LT_2-226",
         "code": "226",
-        "name": "Student Lounge",
-        "area_m2": 64.4
+        "name": "Student Lounge"
       },
       "geometry": {
         "type": "Polygon",
@@ -402,8 +393,7 @@
         "type": "room",
         "id": "LT_2-226b",
         "code": "226b",
-        "name": "Rg. Laktasi",
-        "area_m2": 3.3
+        "name": "Rg. Laktasi"
       },
       "geometry": {
         "type": "Polygon",
@@ -440,8 +430,7 @@
         "type": "room",
         "id": "LT_2-226a",
         "code": "226a",
-        "name": "Command Centre",
-        "area_m2": 13.6
+        "name": "Command Centre"
       },
       "geometry": {
         "type": "Polygon",
@@ -478,8 +467,7 @@
         "type": "room",
         "id": "LT_2-201C",
         "code": "201C",
-        "name": "Tax Center",
-        "area_m2": 18.2
+        "name": "Tax Center"
       },
       "geometry": {
         "type": "Polygon",
@@ -516,8 +504,7 @@
         "type": "room",
         "id": "LT_2-201B",
         "code": "201B",
-        "name": "Rg. SRB",
-        "area_m2": 14.4
+        "name": "Rg. SRB"
       },
       "geometry": {
         "type": "Polygon",
@@ -554,8 +541,7 @@
         "type": "room",
         "id": "LT_2-201A",
         "code": "201A",
-        "name": "Rg. SC",
-        "area_m2": 13.0
+        "name": "Rg. SC"
       },
       "geometry": {
         "type": "Polygon",
@@ -592,8 +578,7 @@
         "type": "room",
         "id": "LT_2-201",
         "code": "201",
-        "name": "Rg. Meeting",
-        "area_m2": 10.7
+        "name": "Rg. Meeting"
       },
       "geometry": {
         "type": "Polygon",
@@ -630,8 +615,7 @@
         "type": "room",
         "id": "LT_2-202",
         "code": "202",
-        "name": "Student Lounge",
-        "area_m2": 182.6
+        "name": "Student Lounge"
       },
       "geometry": {
         "type": "Polygon",
@@ -668,8 +652,7 @@
         "type": "room",
         "id": "LT_2-203",
         "code": "203",
-        "name": "BAA",
-        "area_m2": 98.9
+        "name": "BAA"
       },
       "geometry": {
         "type": "Polygon",
@@ -722,8 +705,7 @@
         "type": "room",
         "id": "LT_2-203A",
         "code": "203A",
-        "name": "Rg. Produksi",
-        "area_m2": 6.4
+        "name": "Rg. Produksi"
       },
       "geometry": {
         "type": "Polygon",
@@ -760,8 +742,7 @@
         "type": "room",
         "id": "LT_2-203B",
         "code": "203B",
-        "name": "Rg. Arsip BAA",
-        "area_m2": 42.1
+        "name": "Rg. Arsip BAA"
       },
       "geometry": {
         "type": "Polygon",
@@ -798,8 +779,7 @@
         "type": "room",
         "id": "LT_2-207",
         "code": "207",
-        "name": "BMA",
-        "area_m2": 68.3
+        "name": "BMA"
       },
       "geometry": {
         "type": "Polygon",
@@ -852,8 +832,7 @@
         "type": "room",
         "id": "LT_2-206",
         "code": "206",
-        "name": "Rg. Konseling BMA",
-        "area_m2": 13.9
+        "name": "Rg. Konseling BMA"
       },
       "geometry": {
         "type": "Polygon",
@@ -890,8 +869,7 @@
         "type": "room",
         "id": "LT_2-208",
         "code": "208",
-        "name": "Gudang BMA",
-        "area_m2": 13.0
+        "name": "Gudang BMA"
       },
       "geometry": {
         "type": "Polygon",
@@ -928,8 +906,7 @@
         "type": "room",
         "id": "LT_2-205",
         "code": "205",
-        "name": "MNA",
-        "area_m2": 133.3
+        "name": "MNA"
       },
       "geometry": {
         "type": "Polygon",
@@ -966,8 +943,7 @@
         "type": "room",
         "id": "LT_2-204",
         "code": "204",
-        "name": "Gudang MNA",
-        "area_m2": 22.2
+        "name": "Gudang MNA"
       },
       "geometry": {
         "type": "Polygon",
@@ -1002,8 +978,7 @@
       "properties": {
         "floor": "LT_2",
         "type": "APAR",
-        "id": "LT_2-APAR-01",
-        "inside_building": true
+        "id": "LT_2-APAR-01"
       },
       "geometry": {
         "type": "Point",
@@ -1018,8 +993,7 @@
       "properties": {
         "floor": "LT_2",
         "type": "APAR",
-        "id": "LT_2-APAR-02",
-        "inside_building": true
+        "id": "LT_2-APAR-02"
       },
       "geometry": {
         "type": "Point",

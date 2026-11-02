@@ -52,8 +52,7 @@
         "type": "room",
         "id": "LT_2A-230",
         "code": "230",
-        "name": "Lab IKM - FK",
-        "area_m2": 71.0
+        "name": "Lab IKM - FK"
       },
       "geometry": {
         "type": "Polygon",
@@ -90,8 +89,7 @@
         "type": "room",
         "id": "LT_2A-229",
         "code": "229",
-        "name": "Kelas",
-        "area_m2": 105.4
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -128,8 +126,7 @@
         "type": "room",
         "id": "LT_2A-228",
         "code": "228",
-        "name": "Kelas",
-        "area_m2": 103.3
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -166,8 +163,7 @@
         "type": "room",
         "id": "LT_2A-227",
         "code": "227",
-        "name": "Kelas",
-        "area_m2": 97.8
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -204,8 +200,7 @@
         "type": "room",
         "id": "LT_2A-231-232",
         "code": "231-232",
-        "name": "UC Online",
-        "area_m2": 137.4
+        "name": "UC Online"
       },
       "geometry": {
         "type": "Polygon",
@@ -242,8 +237,7 @@
         "type": "room",
         "id": "LT_2A-234",
         "code": "234",
-        "name": "NNP",
-        "area_m2": 68.2
+        "name": "NNP"
       },
       "geometry": {
         "type": "Polygon",
@@ -280,8 +274,7 @@
         "type": "room",
         "id": "LT_2A-235",
         "code": "235",
-        "name": "CAD",
-        "area_m2": 30.2
+        "name": "CAD"
       },
       "geometry": {
         "type": "Polygon",
@@ -318,8 +311,7 @@
         "type": "room",
         "id": "LT_2A-210-211",
         "code": "210-211",
-        "name": "Meeting Room",
-        "area_m2": 191.9
+        "name": "Meeting Room"
       },
       "geometry": {
         "type": "Polygon",
@@ -356,8 +348,7 @@
         "type": "room",
         "id": "LT_2A-212c",
         "code": "212c",
-        "name": "Rector",
-        "area_m2": 15.6
+        "name": "Rector"
       },
       "geometry": {
         "type": "Polygon",
@@ -394,8 +385,7 @@
         "type": "room",
         "id": "LT_2A-212d",
         "code": "212d",
-        "name": "Vice 3",
-        "area_m2": 16.0
+        "name": "Vice 3"
       },
       "geometry": {
         "type": "Polygon",
@@ -432,8 +422,7 @@
         "type": "room",
         "id": "LT_2A-214b",
         "code": "214b",
-        "name": "BOD",
-        "area_m2": 18.8
+        "name": "BOD"
       },
       "geometry": {
         "type": "Polygon",
@@ -470,8 +459,7 @@
         "type": "room",
         "id": "LT_2A-212b",
         "code": "212b",
-        "name": "Vice 2",
-        "area_m2": 13.4
+        "name": "Vice 2"
       },
       "geometry": {
         "type": "Polygon",
@@ -508,8 +496,7 @@
         "type": "room",
         "id": "LT_2A-212a",
         "code": "212a",
-        "name": "Vice 1",
-        "area_m2": 14.2
+        "name": "Vice 1"
       },
       "geometry": {
         "type": "Polygon",
@@ -546,8 +533,7 @@
         "type": "room",
         "id": "LT_2A-212",
         "code": "212",
-        "name": "Directors",
-        "area_m2": 14.3
+        "name": "Directors"
       },
       "geometry": {
         "type": "Polygon",
@@ -584,8 +570,7 @@
         "type": "room",
         "id": "LT_2A-213",
         "code": "213",
-        "name": "Meeting Room",
-        "area_m2": 21.8
+        "name": "Meeting Room"
       },
       "geometry": {
         "type": "Polygon",
@@ -622,8 +607,7 @@
         "type": "room",
         "id": "LT_2A-214a",
         "code": "214a",
-        "name": "EBO",
-        "area_m2": 14.6
+        "name": "EBO"
       },
       "geometry": {
         "type": "Polygon",
@@ -660,8 +644,7 @@
         "type": "room",
         "id": "LT_2A-214",
         "code": "214",
-        "name": "EBO",
-        "area_m2": 20.3
+        "name": "EBO"
       },
       "geometry": {
         "type": "Polygon",
@@ -698,8 +681,7 @@
         "type": "room",
         "id": "LT_2A-LOBBY",
         "code": "LOBBY",
-        "name": "Lobby",
-        "area_m2": 43.3
+        "name": "Lobby"
       },
       "geometry": {
         "type": "Polygon",
@@ -736,8 +718,7 @@
         "type": "room",
         "id": "LT_2A-220",
         "code": "220",
-        "name": "Multimedia Room",
-        "area_m2": 22.7
+        "name": "Multimedia Room"
       },
       "geometry": {
         "type": "Polygon",
@@ -774,8 +755,7 @@
         "type": "room",
         "id": "LT_2A-219",
         "code": "219",
-        "name": "LSP",
-        "area_m2": 21.2
+        "name": "LSP"
       },
       "geometry": {
         "type": "Polygon",
@@ -812,8 +792,7 @@
         "type": "room",
         "id": "LT_2A-218",
         "code": "218",
-        "name": "QA",
-        "area_m2": 62.0
+        "name": "QA"
       },
       "geometry": {
         "type": "Polygon",
@@ -850,8 +829,7 @@
         "type": "room",
         "id": "LT_2A-216",
         "code": "216",
-        "name": "University Office",
-        "area_m2": 30.5
+        "name": "University Office"
       },
       "geometry": {
         "type": "Polygon",
@@ -888,8 +866,7 @@
         "type": "room",
         "id": "LT_2A-215",
         "code": "215",
-        "name": "HCM",
-        "area_m2": 69.7
+        "name": "HCM"
       },
       "geometry": {
         "type": "Polygon",
@@ -924,8 +901,7 @@
       "properties": {
         "floor": "LT_2A",
         "type": "APAR",
-        "id": "LT_2A-APAR-01",
-        "inside_building": true
+        "id": "LT_2A-APAR-01"
       },
       "geometry": {
         "type": "Point",
@@ -940,8 +916,7 @@
       "properties": {
         "floor": "LT_2A",
         "type": "APAR",
-        "id": "LT_2A-APAR-02",
-        "inside_building": true
+        "id": "LT_2A-APAR-02"
       },
       "geometry": {
         "type": "Point",

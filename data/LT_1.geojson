@@ -52,8 +52,7 @@
         "type": "room",
         "id": "LT_1-113",
         "code": "113",
-        "name": "Lab 113",
-        "area_m2": 303.4
+        "name": "Lab 113"
       },
       "geometry": {
         "type": "Polygon",
@@ -90,8 +89,7 @@
         "type": "room",
         "id": "LT_1-113a",
         "code": "113a",
-        "name": "113a",
-        "area_m2": 12.3
+        "name": "113a"
       },
       "geometry": {
         "type": "Polygon",
@@ -128,8 +126,7 @@
         "type": "room",
         "id": "LT_1-113b",
         "code": "113b",
-        "name": "113b",
-        "area_m2": 7.6
+        "name": "113b"
       },
       "geometry": {
         "type": "Polygon",
@@ -166,8 +163,7 @@
         "type": "room",
         "id": "LT_1-113c",
         "code": "113c",
-        "name": "113c-d",
-        "area_m2": 6.8
+        "name": "113c-d"
       },
       "geometry": {
         "type": "Polygon",
@@ -204,8 +200,7 @@
         "type": "room",
         "id": "LT_1-102",
         "code": "102",
-        "name": "Musholla",
-        "area_m2": 20.0
+        "name": "Musholla"
       },
       "geometry": {
         "type": "Polygon",
@@ -242,8 +237,7 @@
         "type": "room",
         "id": "LT_1-101",
         "code": "101",
-        "name": "LOT",
-        "area_m2": 43.6
+        "name": "LOT"
       },
       "geometry": {
         "type": "Polygon",
@@ -280,8 +274,7 @@
         "type": "room",
         "id": "LT_1-103",
         "code": "103",
-        "name": "R. Server",
-        "area_m2": 7.0
+        "name": "R. Server"
       },
       "geometry": {
         "type": "Polygon",
@@ -318,8 +311,7 @@
         "type": "room",
         "id": "LT_1-114",
         "code": "114",
-        "name": "Kelas (tanpa nomor)",
-        "area_m2": 197.5
+        "name": "Kelas (tanpa nomor)"
       },
       "geometry": {
         "type": "Polygon",
@@ -356,8 +348,7 @@
         "type": "room",
         "id": "LT_1-115a",
         "code": "115a",
-        "name": "Lab. Penelitian",
-        "area_m2": 51.6
+        "name": "Lab. Penelitian"
       },
       "geometry": {
         "type": "Polygon",
@@ -394,8 +385,7 @@
         "type": "room",
         "id": "LT_1-116",
         "code": "116",
-        "name": "Klinik",
-        "area_m2": 16.2
+        "name": "Klinik"
       },
       "geometry": {
         "type": "Polygon",
@@ -432,8 +422,7 @@
         "type": "room",
         "id": "LT_1-104",
         "code": "104",
-        "name": "Workshop & Business Unit",
-        "area_m2": 91.3
+        "name": "Workshop & Business Unit"
       },
       "geometry": {
         "type": "Polygon",
@@ -470,8 +459,7 @@
         "type": "room",
         "id": "LT_1-105",
         "code": "105",
-        "name": "CBZ Hot Kitchen Laboratory",
-        "area_m2": 101.8
+        "name": "CBZ Hot Kitchen Laboratory"
       },
       "geometry": {
         "type": "Polygon",
@@ -508,8 +496,7 @@
         "type": "room",
         "id": "LT_1-107",
         "code": "107",
-        "name": "CBZ Kitchen Studio Laboratory",
-        "area_m2": 202.1
+        "name": "CBZ Kitchen Studio Laboratory"
       },
       "geometry": {
         "type": "Polygon",
@@ -554,8 +541,7 @@
         "type": "room",
         "id": "LT_1-107A",
         "code": "107A",
-        "name": "Laboratorium Support",
-        "area_m2": 8.7
+        "name": "Laboratorium Support"
       },
       "geometry": {
         "type": "Polygon",
@@ -592,8 +578,7 @@
         "type": "room",
         "id": "LT_1-110",
         "code": "110",
-        "name": "CBZ Beverages Laboratory",
-        "area_m2": 56.0
+        "name": "CBZ Beverages Laboratory"
       },
       "geometry": {
         "type": "Polygon",
@@ -630,8 +615,7 @@
         "type": "room",
         "id": "LT_1-109",
         "code": "109",
-        "name": "CBZ Kitchen Studio Laboratory",
-        "area_m2": 110.9
+        "name": "CBZ Kitchen Studio Laboratory"
       },
       "geometry": {
         "type": "Polygon",
@@ -668,8 +652,7 @@
         "type": "room",
         "id": "LT_1-106",
         "code": "106",
-        "name": "Restaurant & Bar",
-        "area_m2": 95.4
+        "name": "Restaurant & Bar"
       },
       "geometry": {
         "type": "Polygon",
@@ -706,8 +689,7 @@
         "type": "room",
         "id": "LT_1-108",
         "code": "108",
-        "name": "CBZ Pastry Kitchen Laboratory",
-        "area_m2": 61.2
+        "name": "CBZ Pastry Kitchen Laboratory"
       },
       "geometry": {
         "type": "Polygon",
@@ -742,8 +724,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-01",
-        "inside_building": true
+        "id": "LT_1-APAR-01"
       },
       "geometry": {
         "type": "Point",
@@ -758,8 +739,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-02",
-        "inside_building": true
+        "id": "LT_1-APAR-02"
       },
       "geometry": {
         "type": "Point",
@@ -774,8 +754,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-03",
-        "inside_building": true
+        "id": "LT_1-APAR-03"
       },
       "geometry": {
         "type": "Point",
@@ -790,8 +769,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-04",
-        "inside_building": true
+        "id": "LT_1-APAR-04"
       },
       "geometry": {
         "type": "Point",
@@ -806,8 +784,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-05",
-        "inside_building": true
+        "id": "LT_1-APAR-05"
       },
       "geometry": {
         "type": "Point",
@@ -822,8 +799,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-06",
-        "inside_building": true
+        "id": "LT_1-APAR-06"
       },
       "geometry": {
         "type": "Point",
@@ -838,8 +814,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-07",
-        "inside_building": true
+        "id": "LT_1-APAR-07"
       },
       "geometry": {
         "type": "Point",
@@ -854,8 +829,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-08",
-        "inside_building": true
+        "id": "LT_1-APAR-08"
       },
       "geometry": {
         "type": "Point",
@@ -870,8 +844,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-09",
-        "inside_building": true
+        "id": "LT_1-APAR-09"
       },
       "geometry": {
         "type": "Point",
@@ -886,8 +859,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-10",
-        "inside_building": true
+        "id": "LT_1-APAR-10"
       },
       "geometry": {
         "type": "Point",
@@ -902,8 +874,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-11",
-        "inside_building": true
+        "id": "LT_1-APAR-11"
       },
       "geometry": {
         "type": "Point",
@@ -918,8 +889,7 @@
       "properties": {
         "floor": "LT_1",
         "type": "APAR",
-        "id": "LT_1-APAR-12",
-        "inside_building": false
+        "id": "LT_1-APAR-12"
       },
       "geometry": {
         "type": "Point",

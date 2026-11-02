@@ -68,8 +68,7 @@
         "type": "room",
         "id": "LT_5-516-517",
         "code": "516-517",
-        "name": "Lab Histologi & PA",
-        "area_m2": 231.7
+        "name": "Lab Histologi & PA"
       },
       "geometry": {
         "type": "Polygon",
@@ -106,8 +105,7 @@
         "type": "room",
         "id": "LT_5-515",
         "code": "515",
-        "name": "Kelas",
-        "area_m2": 141.9
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -144,8 +142,7 @@
         "type": "room",
         "id": "LT_5-507",
         "code": "507",
-        "name": "Kelas",
-        "area_m2": 138.5
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -182,8 +179,7 @@
         "type": "room",
         "id": "LT_5-508",
         "code": "508",
-        "name": "Kelas",
-        "area_m2": 152.0
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -220,8 +216,7 @@
         "type": "room",
         "id": "LT_5-509",
         "code": "509",
-        "name": "Mini Theater",
-        "area_m2": 70.9
+        "name": "Mini Theater"
       },
       "geometry": {
         "type": "Polygon",
@@ -258,8 +253,7 @@
         "type": "room",
         "id": "LT_5-518",
         "code": "518",
-        "name": "Lab. Faal & Farmakologi",
-        "area_m2": 164.6
+        "name": "Lab. Faal & Farmakologi"
       },
       "geometry": {
         "type": "Polygon",
@@ -296,8 +290,7 @@
         "type": "room",
         "id": "LT_5-519",
         "code": "519",
-        "name": "Kelas",
-        "area_m2": 131.1
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -334,8 +327,7 @@
         "type": "room",
         "id": "LT_5-506",
         "code": "506",
-        "name": "CoE",
-        "area_m2": 118.8
+        "name": "CoE"
       },
       "geometry": {
         "type": "Polygon",
@@ -372,8 +364,7 @@
         "type": "room",
         "id": "LT_5-505b",
         "code": "505b",
-        "name": "Kelas",
-        "area_m2": 104.4
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -410,8 +401,7 @@
         "type": "room",
         "id": "LT_5-505a",
         "code": "505a",
-        "name": "Kelas",
-        "area_m2": 104.4
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -448,8 +438,7 @@
         "type": "room",
         "id": "LT_5-504",
         "code": "504",
-        "name": "Kelas",
-        "area_m2": 158.4
+        "name": "Kelas"
       },
       "geometry": {
         "type": "Polygon",
@@ -486,8 +475,7 @@
         "type": "room",
         "id": "LT_5-501",
         "code": "501",
-        "name": "Academic Support",
-        "area_m2": 35.9
+        "name": "Academic Support"
       },
       "geometry": {
         "type": "Polygon",
@@ -524,8 +512,7 @@
         "type": "room",
         "id": "LT_5-502A",
         "code": "502A",
-        "name": "HOD IMT",
-        "area_m2": 14.0
+        "name": "HOD IMT"
       },
       "geometry": {
         "type": "Polygon",
@@ -562,8 +549,7 @@
         "type": "room",
         "id": "LT_5-502B",
         "code": "502B",
-        "name": "Dean FTI",
-        "area_m2": 14.3
+        "name": "Dean FTI"
       },
       "geometry": {
         "type": "Polygon",
@@ -600,8 +586,7 @@
         "type": "room",
         "id": "LT_5-502C",
         "code": "502C",
-        "name": "HOD ISB",
-        "area_m2": 14.9
+        "name": "HOD ISB"
       },
       "geometry": {
         "type": "Polygon",
@@ -638,8 +623,7 @@
         "type": "room",
         "id": "LT_5-503",
         "code": "503",
-        "name": "R. Dosen FTI",
-        "area_m2": 165.5
+        "name": "R. Dosen FTI"
       },
       "geometry": {
         "type": "Polygon",
@@ -676,8 +660,7 @@
         "type": "room",
         "id": "LT_5-513",
         "code": "513",
-        "name": "Lounge",
-        "area_m2": 55.6
+        "name": "Lounge"
       },
       "geometry": {
         "type": "Polygon",
@@ -714,8 +697,7 @@
         "type": "room",
         "id": "LT_5-512",
         "code": "512",
-        "name": "Rg. Meeting",
-        "area_m2": 40.9
+        "name": "Rg. Meeting"
       },
       "geometry": {
         "type": "Polygon",
@@ -752,8 +734,7 @@
         "type": "room",
         "id": "LT_5-511",
         "code": "511",
-        "name": "Rg. Meeting",
-        "area_m2": 28.0
+        "name": "Rg. Meeting"
       },
       "geometry": {
         "type": "Polygon",
@@ -790,8 +771,7 @@
         "type": "room",
         "id": "LT_5-510",
         "code": "510",
-        "name": "Lounge",
-        "area_m2": 191.6
+        "name": "Lounge"
       },
       "geometry": {
         "type": "Polygon",
@@ -826,8 +806,7 @@
       "properties": {
         "floor": "LT_5",
         "type": "APAR",
-        "id": "LT_5-APAR-01",
-        "inside_building": true
+        "id": "LT_5-APAR-01"
       },
       "geometry": {
         "type": "Point",
@@ -842,8 +821,7 @@
       "properties": {
         "floor": "LT_5",
         "type": "APAR",
-        "id": "LT_5-APAR-02",
-        "inside_building": true
+        "id": "LT_5-APAR-02"
       },
       "geometry": {
         "type": "Point",
@@ -858,8 +836,7 @@
       "properties": {
         "floor": "LT_5",
         "type": "APAR",
-        "id": "LT_5-APAR-03",
-        "inside_building": true
+        "id": "LT_5-APAR-03"
       },
       "geometry": {
         "type": "Point",
@@ -874,8 +851,7 @@
       "properties": {
         "floor": "LT_5",
         "type": "APAR",
-        "id": "LT_5-APAR-04",
-        "inside_building": true
+        "id": "LT_5-APAR-04"
       },
       "geometry": {
         "type": "Point",
