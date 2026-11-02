@@ -120,13 +120,10 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
         ax.scatter([rx[0]], [ry[0]], c="#ea580c", s=90, edgecolors="white", linewidth=1.8, zorder=8, label="Centroid Ruangan")
         ax.scatter([rx[-1]], [ry[-1]], c="#dc2626", s=110, marker='s', edgecolors="white", linewidth=1.2, zorder=9, label="Target APAR Terdekat")
 
-    # 6. Titik APAR dan Hydrant
+    # 6. Titik APAR
     if data["apar"]:
         ax.scatter([a["geom"].x for a in data["apar"]], [a["geom"].y for a in data["apar"]],
                    c="#dc2626", s=60, edgecolors="white", linewidth=1.2, zorder=8, label="Titik APAR")
-    if data["hydrant"]:
-        ax.scatter([h["geom"].x for h in data["hydrant"]], [h["geom"].y for h in data["hydrant"]],
-                   c="#2563eb", s=60, edgecolors="white", linewidth=1.2, zorder=8, label="Titik Hydrant")
 
     ax.set_aspect("equal")
     if data["footprint"]:

@@ -1033,38 +1033,6 @@
       "type": "Feature",
       "properties": {
         "floor": "LT_2",
-        "type": "Hydrant",
-        "id": "LT_2-Hydrant-01",
-        "inside_building": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          792.3,
-          327.9
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_2",
-        "type": "Hydrant",
-        "id": "LT_2-Hydrant-02",
-        "inside_building": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1551.1,
-          355.1
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "floor": "LT_2",
         "type": "corridor",
         "id": "LT_2-COR-01",
         "through": [
