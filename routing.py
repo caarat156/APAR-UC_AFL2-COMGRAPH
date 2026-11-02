@@ -24,7 +24,7 @@ APAR_OWNER_PX = 6.0  # Toleransi jarak APAR dianggap milik ruangan
 def load_floor_file(path):
     """Baca satu file GeoJSON lantai menjadi dict geometri Shapely."""
     gj = json.loads(Path(path).read_text(encoding="utf-8"))
-    res = {"footprint": None, "rooms": [], "corridors": [], "through": [], "apar": [], "hydrant": []}
+    res = {"footprint": None, "rooms": [], "corridors": [], "through": [], "apar": []}
     for feat in gj["features"]:
         geom, props = shape(feat["geometry"]), feat["properties"]
         kind = props["type"]
@@ -37,8 +37,6 @@ def load_floor_file(path):
             res["apar"].append({"id": props.get("id", "APAR"), "geom": geom, "inside": props.get("inside_building", True)})
         elif kind == "footprint":
             res["footprint"] = geom
-        elif kind == "Hydrant":
-            res["hydrant"].append({"id": props.get("id", "Hydrant"), "geom": geom})
     return res
 
 

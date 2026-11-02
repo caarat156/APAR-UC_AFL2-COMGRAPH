@@ -124,9 +124,6 @@ def render_map(data, selected_room=None, route_coords=None, buffer_union=None, c
     if data["apar"]:
         ax.scatter([a["geom"].x for a in data["apar"]], [a["geom"].y for a in data["apar"]],
                    c="#dc2626", s=60, edgecolors="white", linewidth=1.2, zorder=8, label="Titik APAR")
-    if data["hydrant"]:
-        ax.scatter([h["geom"].x for h in data["hydrant"]], [h["geom"].y for h in data["hydrant"]],
-                   c="#2563eb", s=60, edgecolors="white", linewidth=1.2, zorder=8, label="Titik Hydrant")
 
     ax.set_aspect("equal")
     if data["footprint"]:
